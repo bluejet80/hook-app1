@@ -65,3 +65,9 @@ This folder will hold all of the the simple components. The building blocks of t
 
 This folder holds the more complex components, those which are made up of one or more simple
 components.
+
+## Useful Websites for Making Your App
+
+### Favicon.io
+
+[FavIcon Generator](https://favicon.io/)

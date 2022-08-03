@@ -1,8 +1,6 @@
-"use strict";
-
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <h1>This is my App</h1>
     </div>
   );
