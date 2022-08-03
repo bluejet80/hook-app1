@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# React App Using Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the first app that I will make that uses hooks. In creating it I will learn more about
+hooks and the various methods in which they are used.
 
-## Available Scripts
+## Files needed in the SRC Directory
 
-In the project directory, you can run:
+When I create a react app I delete the src directory and then create my own files. This helps me to
+learn more. Below are listed the various files that are needed and their purpose in the app.
 
-### `npm start`
+### Index.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is the first file that needs to be created.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Inside the file we will link our app to the **root div** in the **index.html** file.
 
-### `npm test`
+        import React from 'react';
+        import {createRoot} from "react-dom/client";
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        import App from "./App";
+        import "./index.css";
 
-### `npm run build`
+        const container = document.getElementById("root");
+        const root = createRoot(container);
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+        root.render(<App tab="home" />);
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### App.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This is the file that will contain all of the components of our app. It is considered the
+entry point of our app.
 
-### `npm run eject`
+If you have a simple component, you no longer need to import React.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The inside of this file will look like this:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        import React from 'react';
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+        const App = () => {
+            return (
+                <div>
+                {components}
+                </div>
+            )
+        }
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+        export default App
 
-## Learn More
+### Other files that you can create
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Some other files that you might want to create are the:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- App.css (this is used for styling your main component)
+- index.css (this file will hold all of your global styles)
 
-### Code Splitting
+### The Folder structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I think that you should have two main folders.
 
-### Analyzing the Bundle Size
+#### Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This folder will hold all of the the simple components. The building blocks of the app.
 
-### Making a Progressive Web App
+#### Containers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This folder holds the more complex components, those which are made up of one or more simple
+components.
