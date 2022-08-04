@@ -1,0 +1,45 @@
+.navbar-links_logo img {
+  scale: 75%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-links_container {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+}
+
+.navbar-links_container p {
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 25px;
+  text-transform: uppercase;
+  z-index: 2;
+
+  margin: 0 1rem;
+}
+
+.navbar-links_container img {
+  position: relative;
+  left: -3rem;
+  scale: 200%;
+  transition: transform ease-in 1s;
+}
+
+.navbar-links_container p:hover + img {
+  transform: rotate(180deg);
+}
