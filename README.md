@@ -71,3 +71,41 @@ components.
 ### Favicon.io
 
 [FavIcon Generator](https://favicon.io/)
+
+## New App planning
+
+this is a new app i am making. It will be composed of two main parts. The Home component and
+the SideNav component. I want to have all of the links be just different colored squares on
+the side nav bar. Then when you click on the links a new component appears in the home
+component area. And thats the main idea.
+
+### Side Nav Component
+
+javaScript
+
+- fundamentals
+  type coersion
+- environmental setup
+- string manipulation
+- array methods
+- objects
+- classes
+- chaining
+- boolean stuff
+- functions/closures
+- this keyword
+- destructuring
+- reduce
+- map/filter
+- looping
+- testing
+
+node JS
+
+- express
+- routing
+- apis
+- fs module
+- async/await
+
+### Home Component

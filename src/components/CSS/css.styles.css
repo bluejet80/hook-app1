@@ -1,0 +1,19 @@
+:root {
+  --color9: #83ae8e;
+  --color10: #b2ad7f;
+  --color11: #6f96c7;
+  --color12: #8770c3;
+}
+
+.color9 {
+  background: var(--color9);
+}
+.color10 {
+  background: var(--color10);
+}
+.color11 {
+  background: var(--color11);
+}
+.color12 {
+  background: var(--color12);
+}

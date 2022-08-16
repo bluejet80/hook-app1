@@ -1,0 +1,14 @@
+.article-container {
+  display: block;
+}
+
+.article-container_text {
+  display: block;
+  color: #fff;
+}
+
+.article-container_text p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,19 @@
+:root {
+  --color13: #d5e1df;
+  --color14: #e3eaa7;
+  --color15: #b5e7a0;
+  --color16: #86af49;
+}
+
+.color13 {
+  background: var(--color13);
+}
+.color14 {
+  background: var(--color14);
+}
+.color15 {
+  background: var(--color15);
+}
+.color16 {
+  background: var(--color16);
+}

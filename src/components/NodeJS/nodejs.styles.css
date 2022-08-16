@@ -1,0 +1,21 @@
+
+
+:root {
+  --color5: #deeaee;
+  --color6: #b1cbbb;
+  --color7: #eea29a;
+  --color8: #c94c4c;
+}
+
+.color5 {
+  background: var(--color5);
+}
+.color6 {
+  background: var(--color6);
+}
+.color7 {
+  background: var(--color7);
+}
+.color8 {
+  background: var(--color8);
+}
