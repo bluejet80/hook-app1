@@ -5,6 +5,7 @@ const Fundamentals = () => {
         <span className="title">JavaScript Fundamentals</span>
       </div>
       <div className="home-content color1">
+        <div className="section-header">Math Operators</div>
         <p>
           We are going to try to make a website for all the javascript learning
           information.

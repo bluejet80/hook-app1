@@ -101,3 +101,12 @@
   font-size: 16px;
   margin: 0px;
 }
+
+.section-header {
+  background: linear-gradient(rgb(232, 232, 232), #99a0a8);
+  width: 30%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-bottom: 3pt solid grey;
+  clip-path: polygon(0 0, 0 100%, 60% 100%, 100% 60%, 100% 0);
+}
