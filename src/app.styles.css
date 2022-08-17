@@ -110,3 +110,32 @@
   border-bottom: 3pt solid grey;
   clip-path: polygon(0 0, 0 100%, 60% 100%, 100% 60%, 100% 0);
 }
+
+.table-container {
+  width: 75%;
+  margin: 5px;
+  border-radius: 10px;
+  border: solid rgb(77, 98, 129) 4px;
+}
+.table-row {
+  display: flex;
+  flex-direction: row;
+}
+.table-data1,
+.table-data2 {
+  padding: 2px;
+  text-align: center;
+  border-bottom: solid black 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.table-data1 {
+  border-right: solid black 1px;
+  min-width: 100px;
+}
+
+.table-data2 {
+  width: 80%;
+}
