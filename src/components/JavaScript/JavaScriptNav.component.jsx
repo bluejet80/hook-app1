@@ -2,15 +2,14 @@ import { Link } from "react-router-dom";
 
 const names = [
   "fundamentals",
-  "environment",
+  "boolean",
   "strings",
+  "arrays",
+  "functions",
   "objects",
   "classes",
   "chaining",
-  "boolean",
-  "functions",
   "closures",
-  "this",
   "destructuring",
   "reduce",
   "map",

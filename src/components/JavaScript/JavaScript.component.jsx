@@ -1,7 +1,7 @@
 import "./javascript.styles.css";
 import { JavaScriptNav, JavaScriptHome } from "./index";
 import { Route, Routes } from "react-router-dom";
-import { Fundamentals, Environment, Strings, Objects } from "./components";
+import { Fundamentals, Strings, Objects, Boolean } from "./components";
 
 const JavaScript = () => {
   return (
@@ -10,7 +10,7 @@ const JavaScript = () => {
       <Routes>
         <Route path="/" element={<JavaScriptHome />} />
         <Route path="fundamentals" element={<Fundamentals />} />
-        <Route path="environment" element={<Environment />} />
+        <Route path="boolean" element={<Boolean />} />
         <Route path="strings" element={<Strings />} />
         <Route path="objects" element={<Objects />} />
       </Routes>

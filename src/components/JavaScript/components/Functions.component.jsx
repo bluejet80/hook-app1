@@ -23,10 +23,9 @@ const Fundamentals = () => {
         <DataTable list={compList} />
         <div className="section-header">Type Coersion and Conversion</div>
         <p>
-          You can use the Number() function to convert a string to a number and
-          then the String() function to convert a number to a string.
+          Javascript will convert types to other types when the situation calls
+          for it.
         </p>
-        <p>There is also a couple of things to note here:</p>
 
         <div className="section-header">Sample Code</div>
         <p>Here is some Sample Code to test the code block</p>

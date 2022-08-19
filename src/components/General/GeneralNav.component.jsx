@@ -1,7 +1,7 @@
-const names = ["VIM", "VS Code", "Emacs", "Vim Themes", "VS Code Ext", "Slime"];
+const names = ["VIM", "VS Code", "Emacs", "Yarn", "App Planning"];
 const colors = ["color1", "color2", "color3", "color4"];
 
-const EditorsNav = () => {
+const GeneralNav = () => {
   return (
     <div className="side-nav">
       {names.map((item, index) => {
@@ -18,4 +18,4 @@ const EditorsNav = () => {
   );
 };
 
-export default EditorsNav;
+export default GeneralNav;

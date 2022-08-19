@@ -9,7 +9,7 @@ import {
   JavaScript,
   CSS,
   NodeJS,
-  Editors,
+  General,
   ReactJS,
   TopHead,
   Home,
@@ -27,7 +27,7 @@ const App = () => {
           <Route path="nodejs/*" element={<NodeJS />} />
           <Route path="reactjs/*" element={<ReactJS />} />
           <Route path="css/*" element={<CSS />} />
-          <Route path="editors/*" element={<Editors />} />
+          <Route path="general/*" element={<General />} />
           <Route path="testing/*" element={<Testing />} />
         </Routes>
       </div>

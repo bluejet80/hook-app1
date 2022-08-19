@@ -8,17 +8,17 @@ const TopHead = () => {
         <h1>Study Website Fourteen</h1>
       </Link>
       <ul className="main-links">
+        <Link to="general">
+          <li>General</li>
+        </Link>
         <Link to="javascript">
           <li>JavaScript</li>
-        </Link>
-        <Link to="css">
-          <li>CSS</li>
         </Link>
         <Link to="reactjs">
           <li>React</li>
         </Link>
-        <Link to="editors">
-          <li>Editors</li>
+        <Link to="css">
+          <li>CSS</li>
         </Link>
         <Link to="nodejs">
           <li>NodeJS</li>
@@ -30,5 +30,8 @@ const TopHead = () => {
     </div>
   );
 };
+3;
+
+console.log();
 
 export default TopHead;
