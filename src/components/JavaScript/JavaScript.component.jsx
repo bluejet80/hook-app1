@@ -1,7 +1,15 @@
 import "./javascript.styles.css";
+import { useState, useEffect } from "react";
 import { JavaScriptNav, JavaScriptHome } from "./index";
-import { Route, Routes } from "react-router-dom";
-import { Fundamentals, Strings, Objects, Boolean } from "./components";
+import { Route, Routes, useLocation } from "react-router-dom";
+import {
+  Fundamentals,
+  Strings,
+  Objects,
+  Boolean,
+  Functions,
+  Arrays,
+} from "./components";
 
 const JavaScript = () => {
   return (
@@ -13,6 +21,8 @@ const JavaScript = () => {
         <Route path="boolean" element={<Boolean />} />
         <Route path="strings" element={<Strings />} />
         <Route path="objects" element={<Objects />} />
+        <Route path="arrays" element={<Arrays />} />
+        <Route path="functions" element={<Functions />} />
       </Routes>
     </div>
   );

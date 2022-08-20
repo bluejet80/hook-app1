@@ -1,31 +1,31 @@
 import "./topHead.styles.css";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const TopHead = () => {
   return (
     <div className="top-head">
-      <Link to="/">
+      <NavLink to="/">
         <h1>Study Website Fourteen</h1>
-      </Link>
+      </NavLink>
       <ul className="main-links">
-        <Link to="general">
+        <NavLink to="general">
           <li>General</li>
-        </Link>
-        <Link to="javascript">
+        </NavLink>
+        <NavLink to="javascript">
           <li>JavaScript</li>
-        </Link>
-        <Link to="reactjs">
+        </NavLink>
+        <NavLink to="reactjs">
           <li>React</li>
-        </Link>
-        <Link to="css">
+        </NavLink>
+        <NavLink to="css">
           <li>CSS</li>
-        </Link>
-        <Link to="nodejs">
+        </NavLink>
+        <NavLink to="nodejs">
           <li>NodeJS</li>
-        </Link>
-        <Link to="testing">
+        </NavLink>
+        <NavLink to="testing">
           <li>Testing</li>
-        </Link>
+        </NavLink>
       </ul>
     </div>
   );

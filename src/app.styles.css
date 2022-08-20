@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "source sans";
+  src: url("fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "lato";
+  src: url("fonts/Lato-Regular.ttf") format("truetype");
+}
+
 .App {
   display: grid;
   width: 100%;
@@ -20,23 +29,25 @@
 }
 .link-node {
   display: inline-flex;
+  vertical-align: top;
   width: 33%;
   height: 100px;
   align-items: center;
+  text-align: center;
   justify-content: center;
   transition: all 0.3s;
 }
 .link-node:hover {
-  transform: scale(1.1);
-  box-shadow: 1px 1px 10px 2px;
+  transform: scale(1.02);
+  box-shadow: 0.5px 0.5px 5px 1px;
 }
 .link-node:active {
-  transform: scale(1.05);
-  box-shadow: 1px 1px 5px 1px;
+  transform: scale(1);
+  box-shadow: 0px 0px 0px 0px;
 }
 
 .link-node_name {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "lato";
   font-size: 15px;
   font-weight: 800;
 }
@@ -101,14 +112,23 @@
 }
 
 .home-content p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "source sans";
   font-size: 16px;
   margin: 0px;
   text-indent: 30px;
+  margin-top: 10px;
+}
+
+.home-content a {
+  font-family: "source sans";
+  font-size: 18px;
+  color: rgb(84, 84, 249);
+  font-weight: bold;
 }
 
 .section-header {
   background: linear-gradient(#d5f4e6, #99a0a8);
+  font-family: "source sans";
   width: 30%;
   padding: 5px;
   font-size: 14px;
@@ -116,7 +136,7 @@
   letter-spacing: 1px;
   border-bottom: 3pt solid rgb(78, 194, 253);
   clip-path: polygon(0 0, 0 100%, 60% 100%, 100% 60%, 100% 0);
-  margin: 20px 10px;
+  margin: 10px 10px;
   border-radius: 5px;
 }
 
@@ -154,4 +174,18 @@
 .code-block {
   margin: 30px;
   width: 75%;
+}
+
+.footer {
+  text-align: center;
+  height: 150px;
+  margin: 50px 0px;
+  border-top: solid black 2pt;
+  padding: 20px 0px;
+}
+.footer-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

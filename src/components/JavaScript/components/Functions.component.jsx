@@ -1,41 +1,51 @@
-import { DataTable, CodeBlock } from "./index";
-import { code1 } from "../Data/FundCode";
-import { assignList, commonList, compList } from "../Data/FundTables";
+import { DataTable, CodeBlock, Footer } from "./index";
+import { arrowCode1, functCode1, functCode2 } from "../Data/FundCode";
 
-const Fundamentals = () => {
+const Functions = () => {
   return (
     <div className="home-section">
       <div className="header color2">
-        <span className="title">JavaScript Fundamentals</span>
+        <span className="title">JavaScript Functions</span>
       </div>
       <div className="home-content">
+        <div className="section-header">Ways of Writing Functions</div>
+        <p>FUNCTION DECLARATION</p>
+        <p>With a function declaration a name for the function is specified</p>
+        <CodeBlock code={functCode1} />
+        <p>FUNCTION EXPRESSION</p>
         <p>
-          Here includes all the fundamental aspects of Javascript. i tend to
-          think of the fundamentals as a very important part of any knowledge
-          base. No matter how advanced you bevcome in your knowledge you are
-          still at the mercy of the fundamenta aspects of that thing.
+          With a function expression the name for the function is not specified
+          and instead the anonymous function is assigned to a variable.
         </p>
-        <div className="section-header">Assignment Operators</div>
-        <DataTable list={assignList} />
-        <div className="section-header">Common things</div>
-        <DataTable list={commonList} />
-        <div className="section-header">Comparison Operators</div>
-        <DataTable list={compList} />
-        <div className="section-header">Type Coersion and Conversion</div>
+        <CodeBlock code={functCode2} />
         <p>
-          Javascript will convert types to other types when the situation calls
-          for it.
+          The biggest difference right now, between the two is that with
+          function declarations, the function can be called before it is
+          declared. But with function expressions, the function can not be
+          called before it is declared. Internally this happens due to a process
+          called hoisting.
         </p>
-
-        <div className="section-header">Sample Code</div>
-        <p>Here is some Sample Code to test the code block</p>
-        <CodeBlock code={code1} />
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
+        <p>
+          It might be a good habit to get into to write mostly function
+          expressions because then your code will be organized better because
+          you are forced to declare the functions before you use them.
+        </p>
+        <p>
+          Some programmers choose to have everything stored in a variable.
+          Function expressions are a way of doing that.
+        </p>
+        <div className="section-header">Arrow Functions</div>
+        <p>
+          An arrow function is a shorter form of function expression that is
+          more compact and easier to write. However Arrow functions DO NOT get a
+          'this' keyword.
+        </p>
+        <CodeBlock code={arrowCode1} />
+        <p>You can also have function expressions as elements of an array</p>
+        <Footer complete={true} />
       </div>
     </div>
   );
 };
 
-export default Fundamentals;
+export default Functions;

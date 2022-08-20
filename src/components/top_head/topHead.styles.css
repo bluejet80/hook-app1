@@ -15,6 +15,7 @@
 
 .main-links {
   display: flex;
+  font-family: "lato";
 
   flex-direction: row;
   justify-content: space-around;
@@ -26,4 +27,12 @@
 }
 .top-head a {
   color: #fff;
+}
+.top-head a:hover {
+  color: rgb(43, 223, 255);
+}
+
+.main-links .active {
+  color: rgb(43, 223, 255);
+  font-weight: bold;
 }
