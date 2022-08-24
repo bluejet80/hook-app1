@@ -1,4 +1,4 @@
-import { DataTable, CodeBlock, Footer } from "./index";
+import { DataTable, CodeBlock, Footer } from "../../index";
 import { ternaryCode1, ternaryCode2 } from "../Data/FundCode";
 import { assignList, commonList, compList } from "../Data/FundTables";
 

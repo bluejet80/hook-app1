@@ -1,13 +1,11 @@
-import { DataTable, CodeBlock, Footer } from "../../index";
-import { code1 } from "../Data/FundCode";
-const Objects = () => {
+function Jest() {
   return (
     <div className="home-section">
       <div className="header color2">
-        <span className="title">JavaScript Objects</span>
+        <span className="title">Jest Basics</span>
       </div>
       <div className="home-content color1">
-        <p>Here we explain more about Javascript Objects.</p>
+        <p>Here is information on the testing framework Jest.</p>
         <div className="section-header">Arrow Functions</div>
         <p>
           An arrow function is a shorter form of function expression that is
@@ -19,6 +17,6 @@ const Objects = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Objects;
+export default Jest;

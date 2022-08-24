@@ -1,4 +1,4 @@
-const names = ["Jest basics"];
+const names = ["jest"];
 const colors = ["color1", "color2", "color3", "color4"];
 
 const TestingNav = () => {

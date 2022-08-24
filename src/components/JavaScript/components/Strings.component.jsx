@@ -1,4 +1,4 @@
-import { CodeBlock, Footer } from "./index";
+import { DataTable, CodeBlock, Footer } from "../../index";
 import { code1 } from "../Data/FundCode";
 const Strings = () => {
   return (

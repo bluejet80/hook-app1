@@ -1,4 +1,4 @@
-import { DataTable, CodeBlock, Footer } from "./index";
+import { DataTable, CodeBlock, Footer } from "../../index";
 import { arrowCode1, functCode1, functCode2 } from "../Data/FundCode";
 
 const Functions = () => {

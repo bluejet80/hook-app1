@@ -1,4 +1,4 @@
-import { DataTable, CodeBlock, Footer } from "./index";
+import { DataTable, CodeBlock, Footer } from "../../index";
 import {
   conversionCode,
   equalCode,

@@ -6,3 +6,6 @@ export { default as NodeJS } from "./NodeJS/NodeJS.component";
 export { default as TopHead } from "./top_head/TopHead.component";
 export { default as Home } from "./Home/Home.component";
 export { default as Testing } from "./Testing/Testing.component";
+export { default as CodeBlock } from "./CodeBlock.component";
+export { default as DataTable } from "./DataTable.componenet";
+export { default as Footer } from "./Footer.component";
