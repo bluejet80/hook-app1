@@ -44,11 +44,12 @@ const Arrays = () => {
           pass a sorting function to the method.
         </p>
         <p>Here are some examples:</p>
-        <CodeBlock code={sortCode} />cd 
+        <CodeBlock code={sortCode} />
+        cd
         <h3>array.fill()</h3>
         <p>This array method removes the FIRST element, and returns it.</p>
         <p>You can also have function expressions as elements of an array</p>
-        <Footer complete={true} />
+        <Footer complete={false} />
       </div>
     </div>
   );

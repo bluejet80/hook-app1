@@ -1,6 +1,7 @@
 import "./javascript.styles.css";
 import { useState, useEffect } from "react";
-import { JavaScriptNav, JavaScriptHome } from "./index";
+import { default as Nav } from "../Nav.component";
+import { default as Home } from "./JavaScriptHome.component";
 import { Route, Routes, useLocation } from "react-router-dom";
 import {
   Fundamentals,
@@ -11,18 +12,46 @@ import {
   Arrays,
 } from "./components";
 
+// Data Arrays
+
+const names = [
+  "fundamentals",
+  "boolean",
+  "strings",
+  "arrays",
+  "functions",
+  "objects",
+  "classes",
+  "chaining",
+  "closures",
+  "destructuring",
+  "arrayreduce",
+  "arraymap",
+  "arrayfilter",
+  "arrayforeach",
+  "libraries",
+  "docs",
+];
+const colors = ["color1", "color2", "color3", "color4"];
+const elements = [
+  <Fundamentals />,
+  <Boolean />,
+  <Strings />,
+  <Arrays />,
+  <Functions />,
+  <Objects />,
+];
+
 const JavaScript = () => {
   return (
     <div className="main">
-      <JavaScriptNav />
+      <Nav links={names} colors={colors} />
       <Routes>
-        <Route path="/" element={<JavaScriptHome />} />
-        <Route path="fundamentals" element={<Fundamentals />} />
-        <Route path="boolean" element={<Boolean />} />
-        <Route path="strings" element={<Strings />} />
-        <Route path="objects" element={<Objects />} />
-        <Route path="arrays" element={<Arrays />} />
-        <Route path="functions" element={<Functions />} />
+        <Route path="/" element={<Home />} />
+        {names.map((item, index) => {
+          return <Route path={item} element={elements[index]} />;
+        })}
+        ;
       </Routes>
     </div>
   );
