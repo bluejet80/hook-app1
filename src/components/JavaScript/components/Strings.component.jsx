@@ -2,11 +2,11 @@ import { DataTable, CodeBlock, Footer } from "../../index";
 import { code1 } from "../Data/FundCode";
 const Strings = () => {
   return (
-    <div className="home-section">
+    <div className="home-section color1">
       <div className="header color2">
         <span className="title">JavaScript Strings</span>
       </div>
-      <div className="home-content color1">
+      <div className="home-content">
         <div className="section-header">Working with Strings</div>
         <p>
           An arrow function is a shorter form of function expression that is

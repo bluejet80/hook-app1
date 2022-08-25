@@ -2,11 +2,11 @@ import { DataTable, CodeBlock, Footer } from "../../index";
 
 const ArrayFilter = () => {
   return (
-    <div className="home-section">
+    <div className="home-section color1">
       <div className="header color2">
         <span className="title">Filter Array Method</span>
       </div>
-      <div className="home-content color1">
+      <div className="home-content">
         <div className="section-header">Heading 1</div>
         <p>Paragraph1</p>
 

@@ -11,7 +11,7 @@ import { assignList, commonList, compList } from "../Data/FundTables";
 
 const Fundamentals = () => {
   return (
-    <div className="home-section">
+    <div className="home-section color1">
       <div className="header color2">
         <span className="title">JavaScript Fundamentals</span>
       </div>

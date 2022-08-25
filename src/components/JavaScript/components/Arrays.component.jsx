@@ -2,11 +2,11 @@ import { DataTable, CodeBlock, Footer } from "../../index";
 import { sortCode } from "../Data/FundCode";
 const Arrays = () => {
   return (
-    <div className="home-section">
+    <div className="home-section color1">
       <div className="header color2">
         <span className="title">JavaScript Arrays</span>
       </div>
-      <div className="home-content color1">
+      <div className="home-content">
         <div className="section-header">
           Array Methods that Mutate Original Array
         </div>

@@ -2,11 +2,11 @@ import { DataTable, CodeBlock, Footer } from "../../index";
 
 const Emacs = () => {
   return (
-    <div className="home-section">
-      <div className="header color2">
+    <div className="home-section color11">
+      <div className="header color5">
         <span className="title">Emacs Information</span>
       </div>
-      <div className="home-content color1">
+      <div className="home-content">
         <p>
           So within this section I can have a table that will show all the
           shortcuts and stuff related to Emacs

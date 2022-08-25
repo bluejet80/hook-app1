@@ -2,7 +2,18 @@ import "./general.styles.css";
 import { default as Home } from "./GeneralHome.component";
 import { default as Nav } from "../Nav.component";
 import { Route, Routes } from "react-router-dom";
-import { Vim, VSCode, Emacs, Yarn, Planning, Lisp, Organize, Git, Npm, Freelance } from "./components";
+import {
+  Vim,
+  VSCode,
+  Emacs,
+  Yarn,
+  Planning,
+  Lisp,
+  Organize,
+  Git,
+  Npm,
+  Freelance,
+} from "./components";
 
 const names = [
   "vim",
@@ -14,10 +25,21 @@ const names = [
   "lisp",
   "organize",
   "git",
-  "freelance"
+  "freelance",
 ];
-const colors = ["color1", "color2", "color3", "color4"];
-const elements = [<Vim />, <VSCode />, <Emacs />, <Yarn />, <Npm />, <Planning />, <Lisp />, <Organize />, <Git />, <Freelance />];
+const colors = ["color5", "color11", "color8", "color16"];
+const elements = [
+  <Vim />,
+  <VSCode />,
+  <Emacs />,
+  <Yarn />,
+  <Npm />,
+  <Planning />,
+  <Lisp />,
+  <Organize />,
+  <Git />,
+  <Freelance />,
+];
 
 const General = () => {
   return (

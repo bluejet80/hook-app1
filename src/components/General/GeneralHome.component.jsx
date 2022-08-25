@@ -1,7 +1,7 @@
 const GeneralHome = () => {
   return (
-    <div className="home-section">
-      <div className="header">
+    <div className="home-section color11">
+      <div className="header color5">
         <span className="title">General Information about stuff</span>
       </div>
       <div className="home-content">

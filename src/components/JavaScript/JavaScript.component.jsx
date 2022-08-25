@@ -69,7 +69,7 @@ const JavaScript = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         {names.map((item, index) => {
-          return <Route path={item} element={elements[index]} />;
+          return <Route path={item} element={elements[index]} key={index} />;
         })}
         ;
       </Routes>

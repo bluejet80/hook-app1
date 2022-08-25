@@ -2,11 +2,11 @@ import { DataTable, CodeBlock, Footer } from "../../index";
 import { code1 } from "../Data/FundCode";
 const Objects = () => {
   return (
-    <div className="home-section">
+    <div className="home-section color1">
       <div className="header color2">
         <span className="title">JavaScript Objects</span>
       </div>
-      <div className="home-content color1">
+      <div className="home-content">
         <p>Here we explain more about Javascript Objects.</p>
         <div className="section-header">Arrow Functions</div>
         <p>

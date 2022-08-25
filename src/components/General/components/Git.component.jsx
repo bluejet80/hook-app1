@@ -1,12 +1,12 @@
 import { DataTable, CodeBlock, Footer } from "../../index";
 
-const  Git = () => {
+const Git = () => {
   return (
-    <div className="home-section">
-      <div className="header color2">
+    <div className="home-section color11">
+      <div className="header color5">
         <span className="title">Git Information</span>
       </div>
-      <div className="home-content color1">
+      <div className="home-content">
         <div className="section-header">Heading 1</div>
         <p>Paragraph1</p>
 

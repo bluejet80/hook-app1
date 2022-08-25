@@ -1,9 +1,9 @@
 import { DataTable, CodeBlock, Footer } from "../../index";
-const Docs = () => {
+const Packages = () => {
   return (
     <div className="home-section color6">
       <div className="header color5">
-        <span className="title">Useful Node.js Documentation</span>
+        <span className="title">Node.js Packages</span>
       </div>
       <div className="home-content">
         <div className="section-header">Heading 1</div>
@@ -15,4 +15,4 @@ const Docs = () => {
   );
 };
 
-export default Docs;
+export default Packages;

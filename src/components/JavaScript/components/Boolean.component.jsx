@@ -4,7 +4,7 @@ import { assignList, commonList, compList } from "../Data/FundTables";
 
 const Boolean = () => {
   return (
-    <div className="home-section">
+    <div className="home-section color1">
       <div className="header color2">
         <span className="title">Booleans in Javascript</span>
       </div>

@@ -1,38 +1,62 @@
 import "./nodejs.styles.css";
-import { NodeJSNav, NodeJSHome } from "./index";
+import { default as Nav } from "../Nav.component";
+import { default as Home } from "./NodeJSHome.component";
+import { Routes, Route } from "react-router-dom";
 import {
-  Modules,
+  Packages,
   Express,
-  Postman,
+  PostMan,
   RestAPI,
   MongoDB,
-  Fetch,
-  Libraries,
+  Global,
+  Backend,
   Docs,
   Resources,
   Middleware,
+  Events,
+  Modules,
 } from "./components";
 
 const names = [
   "modules",
   "express",
+  "global",
+  "packages",
+  "backend",
   "mongodb",
   "postman",
   "restapi",
   "middleware",
-  "fetch",
+  "events",
   "resources",
-  "libraries",
   "docs",
 ];
-const links = [<Modules />];
+const links = [
+  <Modules />,
+  <Express />,
+  <Global />,
+  <Packages />,
+  <Backend />,
+  <MongoDB />,
+  <PostMan />,
+  <RestAPI />,
+  <Middleware />,
+  <Events />,
+  <Resources />,
+  <Docs />,
+];
 const colors = ["color5", "color6", "color7", "color8"];
 
 const NodeJS = () => {
   return (
     <div className="main">
-      <NodeJSNav />
-      <NodeJSHome />
+      <Nav links={names} colors={colors} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {names.map((item, index) => {
+          return <Route path={item} element={links[index]} key={index} />;
+        })}
+      </Routes>
     </div>
   );
 };

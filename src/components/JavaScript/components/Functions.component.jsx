@@ -3,7 +3,7 @@ import { arrowCode1, functCode1, functCode2 } from "../Data/FundCode";
 
 const Functions = () => {
   return (
-    <div className="home-section">
+    <div className="home-section color1">
       <div className="header color2">
         <span className="title">JavaScript Functions</span>
       </div>
