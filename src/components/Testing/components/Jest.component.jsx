@@ -1,10 +1,10 @@
 import { Footer } from "../../index";
 
-function Jest() {
+const Jest = () => {
   return (
     <div className="home-section color13">
       <div className="header color16">
-        <span className="title">Jest Basics</span>
+        <span className="title">Testing With Jest</span>
       </div>
       <div className="home-content">
         <p>Here is information on the testing framework Jest.</p>
