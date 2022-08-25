@@ -10,6 +10,16 @@ import {
   Boolean,
   Functions,
   Arrays,
+  Classes,
+  Chaining,
+  Closures,
+  Destructure,
+  ArrayReduce,
+  ArrayMap,
+  ArrayFilter,
+  ArrayForEach,
+  Libraries,
+  Docs,
 } from "./components";
 
 // Data Arrays
@@ -40,6 +50,16 @@ const elements = [
   <Arrays />,
   <Functions />,
   <Objects />,
+  <Classes />,
+  <Chaining />,
+  <Closures />,
+  <Destructure />,
+  <ArrayReduce />,
+  <ArrayMap />,
+  <ArrayFilter />,
+  <ArrayForEach />,
+  <Libraries />,
+  <Docs />,
 ];
 
 const JavaScript = () => {
