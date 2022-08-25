@@ -1,5 +1,4 @@
 import { DataTable, CodeBlock, Footer } from "../../index";
-import {} from "../Data";
 const Animation = () => {
   return (
     <div className="home-section">
@@ -8,8 +7,7 @@ const Animation = () => {
       </div>
       <div className="home-content color1">
         <div className="section-header">Types of Animations</div>
-        <p>Paragraph1</p>
-        <CodeBlock code={code1} />
+        <p>Paragraph</p>
         <p>You can also have function expressions as elements of an array</p>
         <Footer complete={false} />
       </div>
