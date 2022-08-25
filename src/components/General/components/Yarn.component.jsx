@@ -1,10 +1,10 @@
 import { DataTable, CodeBlock, Footer } from "../../index";
 
-const Test = () => {
+const Yarn = () => {
   return (
     <div className="home-section">
       <div className="header color2">
-        <span className="title">Test</span>
+        <span className="title">Yarn Information</span>
       </div>
       <div className="home-content color1">
         <div className="section-header">Heading 1</div>
@@ -17,4 +17,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Yarn;

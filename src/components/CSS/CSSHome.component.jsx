@@ -5,10 +5,7 @@ const CSSHome = () => {
         <span className="title">CSS Studies</span>
       </div>
       <div className="home-content color9">
-        <p>
-          We are going to try to make a website for all the javascript learning
-          information.
-        </p>
+        <p>This is where all the information on CSS will go.</p>
       </div>
     </div>
   );

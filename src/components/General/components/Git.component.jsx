@@ -1,10 +1,10 @@
 import { DataTable, CodeBlock, Footer } from "../../index";
 
-const Planning = () => {
+const  Git = () => {
   return (
     <div className="home-section">
       <div className="header color2">
-        <span className="title">App Planning Information</span>
+        <span className="title">Git Information</span>
       </div>
       <div className="home-content color1">
         <div className="section-header">Heading 1</div>
@@ -17,4 +17,4 @@ const Planning = () => {
   );
 };
 
-export default Planning;
+export default Git;
