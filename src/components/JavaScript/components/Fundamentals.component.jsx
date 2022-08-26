@@ -1,4 +1,4 @@
-import { DataTable, CodeBlock, Footer } from "../../index";
+import { DataTable, CodeJSBlock, Footer } from "../../index";
 import {
   conversionCode,
   equalCode,
@@ -34,7 +34,7 @@ const Fundamentals = () => {
           then the String() function to convert a number to a string.
         </p>
         <p>There is also a couple of things to note here:</p>
-        <CodeBlock code={conversionCode} />
+        <CodeJSBlock code={conversionCode} />
         <div className="section-header">Let,Const and Var</div>
 
         <p>
@@ -54,11 +54,11 @@ const Fundamentals = () => {
           strings.
         </p>
         <p>You can use the + to concatenate</p>
-        <CodeBlock code={tempLit1} />
+        <CodeJSBlock code={tempLit1} />
         <p>You can use the comma</p>
-        <CodeBlock code={tempLit2} />
+        <CodeJSBlock code={tempLit2} />
         <p>Or you can use a Template Literal(Backticks)</p>
-        <CodeBlock code={tempLit3} />
+        <CodeJSBlock code={tempLit3} />
         <p>
           Some programmers just use backtick for all of their string creation
           and then if they need or want to add a variable, it is super easy to
@@ -73,14 +73,14 @@ const Fundamentals = () => {
           The == is a loose equality operator. It will show equality for strings
           and numbers
         </p>
-        <CodeBlock code={equalCode} />
+        <CodeJSBlock code={equalCode} />
         <p>Always use the triple equals ===</p>
         <div className="section-header">The Switch Statement</div>
         <p>
           Just remember to add a break keyword after each case in the switch
           statement
         </p>
-        <CodeBlock code={switchCode} />
+        <CodeJSBlock code={switchCode} />
         <div className="section-header">Strict Mode</div>
         <p>Strict Mode is a mode that makes your code more secure</p>
         <p>

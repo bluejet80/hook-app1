@@ -1,4 +1,4 @@
-import { DataTable, CodeBlock, Footer } from "../../index";
+import { CodeJSBlock, Footer } from "../../index";
 import { sortCode } from "../Data/FundCode";
 const Arrays = () => {
   return (
@@ -44,7 +44,7 @@ const Arrays = () => {
           pass a sorting function to the method.
         </p>
         <p>Here are some examples:</p>
-        <CodeBlock code={sortCode} />
+        <CodeJSBlock code={sortCode} />
         cd
         <h3>array.fill()</h3>
         <p>This array method removes the FIRST element, and returns it.</p>

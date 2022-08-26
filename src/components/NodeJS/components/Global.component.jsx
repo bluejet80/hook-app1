@@ -1,5 +1,5 @@
-import { DataTable, CodeBlock, Footer } from "../../index";
-
+import { ObjectTable, CodeJSBlock, Footer } from "../../index";
+import { globalObject } from "../data/ObjectData";
 const code1 = `
   setTimeout(() => {
       console.log('hello');
@@ -26,15 +26,15 @@ const Global = () => {
           <span className="code-span">setTimeout</span>. The{" "}
           <span className="code-span">global</span> keyword is optional.
         </p>
-        <CodeBlock code={code1} />
+        <CodeJSBlock code={code1} />
         <p>
           Probably the most famous global is{" "}
           <span className="code-span">global.console.log</span> which we write
           as just <span className="code-span">console.log</span>.
         </p>
-        <div className="section-header">Heading 1</div>
-        <p>Paragraph1</p>
-        <p>You can also have function expressions as elements of an array</p>
+        <div className="section-header">The Global Object</div>
+        <p>This is a table of the methods in the global object</p>
+        <ObjectTable list={globalObject} />
         <Footer complete={false} />
       </div>
     </div>

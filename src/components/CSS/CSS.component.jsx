@@ -12,6 +12,7 @@ import {
   Responsive,
   Sass,
   Tailwind,
+  Tables,
 } from "./components";
 
 const names = [
@@ -24,6 +25,7 @@ const names = [
   "gradients",
   "resources",
   "flexgrid",
+  "tables",
 ];
 const links = [
   <BootStrap />,
@@ -35,6 +37,7 @@ const links = [
   <Gradients />,
   <Resources />,
   <FlexGrid />,
+  <Tables />,
 ];
 const colors = ["color9", "color10", "color11", "color12"];
 

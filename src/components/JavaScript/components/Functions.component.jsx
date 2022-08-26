@@ -1,4 +1,4 @@
-import { DataTable, CodeBlock, Footer } from "../../index";
+import { CodeJSBlock, Footer } from "../../index";
 import { arrowCode1, functCode1, functCode2 } from "../Data/FundCode";
 
 const Functions = () => {
@@ -11,13 +11,13 @@ const Functions = () => {
         <div className="section-header">Ways of Writing Functions</div>
         <p>FUNCTION DECLARATION</p>
         <p>With a function declaration a name for the function is specified</p>
-        <CodeBlock code={functCode1} />
+        <CodeJSBlock code={functCode1} />
         <p>FUNCTION EXPRESSION</p>
         <p>
           With a function expression the name for the function is not specified
           and instead the anonymous function is assigned to a variable.
         </p>
-        <CodeBlock code={functCode2} />
+        <CodeJSBlock code={functCode2} />
         <p>
           The biggest difference right now, between the two is that with
           function declarations, the function can be called before it is
@@ -40,7 +40,7 @@ const Functions = () => {
           more compact and easier to write. However Arrow functions DO NOT get a
           'this' keyword.
         </p>
-        <CodeBlock code={arrowCode1} />
+        <CodeJSBlock code={arrowCode1} />
         <p>You can also have function expressions as elements of an array</p>
         <Footer complete={true} />
       </div>

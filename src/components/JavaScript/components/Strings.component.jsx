@@ -1,5 +1,5 @@
-import { DataTable, CodeBlock, Footer } from "../../index";
-import { code1 } from "../Data/FundCode";
+import { Footer } from "../../index";
+
 const Strings = () => {
   return (
     <div className="home-section color1">
@@ -13,7 +13,7 @@ const Strings = () => {
           more compact and easier to write. However Arrow functions DO NOT get a
           'this' keyword.
         </p>
-        <CodeBlock code={code1} />
+
         <p>You can also have function expressions as elements of an array</p>
         <Footer complete={true} />
       </div>

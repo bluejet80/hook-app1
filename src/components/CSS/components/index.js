@@ -7,3 +7,4 @@ export { default as Resources } from "./Resources.component";
 export { default as Responsive } from "./Responsive.component";
 export { default as Sass } from "./Sass.component";
 export { default as Tailwind } from "./Tailwind.component";
+export { default as Tables } from "./Tables.component";

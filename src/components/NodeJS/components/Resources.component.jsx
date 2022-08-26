@@ -1,4 +1,4 @@
-import { DataTable, CodeBlock, Footer } from "../../index";
+import {  Footer } from "../../index";
 const Resources = () => {
   return (
     <div className="home-section color6">
