@@ -175,6 +175,15 @@
   width: 75%;
 }
 
+.code-span {
+  color: white;
+  background: rgb(34, 52, 80);
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 14px;
+}
+
 .footer {
   text-align: center;
   height: 150px;
