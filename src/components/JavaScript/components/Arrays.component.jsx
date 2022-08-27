@@ -45,10 +45,13 @@ const Arrays = () => {
         </p>
         <p>Here are some examples:</p>
         <CodeJSBlock code={sortCode} />
-        cd
         <h3>array.fill()</h3>
         <p>This array method removes the FIRST element, and returns it.</p>
         <p>You can also have function expressions as elements of an array</p>
+
+        <div className="section-header">
+          Array Methods that Create a New Array
+        </div>
         <Footer complete={false} />
       </div>
     </div>

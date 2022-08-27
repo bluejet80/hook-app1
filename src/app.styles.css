@@ -113,9 +113,9 @@
 .home-content p {
   font-family: "source sans";
   font-size: 16px;
-  margin: 0px;
-  text-indent: 30px;
-  margin-top: 10px;
+  margin: 10px 30px;
+  text-indent: 10px;
+  letter-spacing: 1px;
 }
 
 .home-content a {
@@ -123,6 +123,13 @@
   font-size: 18px;
   color: rgb(84, 84, 249);
   font-weight: bold;
+}
+
+h3 {
+  font-family: "source sans";
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-left: 30px;
 }
 
 .section-header {
@@ -135,7 +142,7 @@
   letter-spacing: 1px;
   border-bottom: 3pt solid rgb(78, 194, 253);
   clip-path: polygon(0 0, 0 100%, 60% 100%, 100% 60%, 100% 0);
-  margin: 10px 10px;
+  margin: 50px 10px;
   border-radius: 5px;
 }
 

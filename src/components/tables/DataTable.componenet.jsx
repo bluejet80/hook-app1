@@ -3,9 +3,9 @@ const DataTable = (list) => {
     <table className="table-main">
       {list.list.map((item, index) => {
         return (
-          <tr className="table-row" key={index}>
-            <td>{item[0]}</td>
-            <td>{item[1]}</td>
+          <tr>
+            <td className="table-cell">{item[0]}</td>
+            <td className="table-cell">{item[1]}</td>
           </tr>
         );
       })}

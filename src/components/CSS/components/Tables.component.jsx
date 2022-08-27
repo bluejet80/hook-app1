@@ -1,5 +1,5 @@
-import { CodeCSSBlock, Footer } from "../../index";
-import { TableCSS } from "../data/tablecode";
+import { CodeCSSBlock, CodeJSXBlock, Footer } from "../../index";
+import { TableCSS, TableJsx } from "../data/tablecode";
 
 const Tables = () => {
   return (
@@ -10,7 +10,8 @@ const Tables = () => {
       <div className="home-content">
         <div className="section-header">Example CSS</div>
         <CodeCSSBlock code={TableCSS} />
-        <p>Paragraph</p>
+        <p>Here is the JSX</p>
+        <CodeJSXBlock code={TableJsx} />
         <p>You can also have function expressions as elements of an array</p>
         <Footer complete={false} />
       </div>

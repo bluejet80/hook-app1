@@ -10,6 +10,7 @@ export {
   CodeHTMLBlock,
   CodeCSSBlock,
   CodeJSBlock,
+  CodeJSXBlock,
 } from "./CodeBlock.component";
 export { default as DataTable } from "./tables/DataTable.componenet";
 export { default as DataTable3 } from "./tables/DataTable3.componenet";
