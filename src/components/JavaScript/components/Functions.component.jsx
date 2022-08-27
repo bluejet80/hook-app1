@@ -9,10 +9,10 @@ const Functions = () => {
       </div>
       <div className="home-content">
         <div className="section-header">Ways of Writing Functions</div>
-        <p>FUNCTION DECLARATION</p>
+        <h3>Function Declaration</h3>
         <p>With a function declaration a name for the function is specified</p>
         <CodeJSBlock code={functCode1} />
-        <p>FUNCTION EXPRESSION</p>
+        <h3>Function Expression</h3>
         <p>
           With a function expression the name for the function is not specified
           and instead the anonymous function is assigned to a variable.

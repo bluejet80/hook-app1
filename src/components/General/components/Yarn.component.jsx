@@ -6,7 +6,7 @@ const Yarn = () => {
       <div className="header color5">
         <span className="title">Yarn Information</span>
       </div>
-      <div className="home-content">
+      <div className="home-content white-text">
         <div className="section-header">Heading 1</div>
         <p>Paragraph1</p>
 

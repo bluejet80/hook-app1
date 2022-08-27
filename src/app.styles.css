@@ -115,7 +115,7 @@
   font-size: 16px;
   margin: 10px 30px;
   text-indent: 10px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .home-content a {
@@ -124,12 +124,29 @@
   color: rgb(84, 84, 249);
   font-weight: bold;
 }
+strong {
+  text-decoration: underline;
+}
+
+.white-text {
+  color: #fff;
+}
 
 h3 {
   font-family: "source sans";
   font-size: 18px;
   letter-spacing: 0.5px;
   margin-left: 30px;
+}
+
+.home-content ul {
+  font-family: "source sans";
+  font-size: 18px;
+  margin-left: 40px;
+  list-style-type: square;
+}
+.home-content li {
+  margin: 10px 0;
 }
 
 .section-header {

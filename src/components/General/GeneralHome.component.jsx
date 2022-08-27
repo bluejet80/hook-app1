@@ -4,7 +4,7 @@ const GeneralHome = () => {
       <div className="header color5">
         <span className="title">General Information about stuff</span>
       </div>
-      <div className="home-content">
+      <div className="home-content white-text">
         <p>
           We are going to try to make a website for all the javascript learning
           information.

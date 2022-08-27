@@ -6,7 +6,7 @@ const Emacs = () => {
       <div className="header color5">
         <span className="title">Emacs Information</span>
       </div>
-      <div className="home-content">
+      <div className="home-content white-text">
         <p>
           So within this section I can have a table that will show all the
           shortcuts and stuff related to Emacs
