@@ -1,5 +1,11 @@
 import { CodeJSBlock, Footer } from "../../index";
-import { constructCode, protoCode, classCode } from "../Data/ClassCode";
+import {
+  constructCode,
+  protoCode,
+  classCode,
+  getterCode1,
+  getterCode2,
+} from "../Data/ClassCode";
 
 const Classes = () => {
   return (
@@ -15,7 +21,7 @@ const Classes = () => {
           objects called instances which we can then use in our code. The
           process of creating an instance is called instantiation.
         </p>
-        <div className="section-header">How does OOP work in JavaScript?</div>
+        <h3>How does OOP work in JS?</h3>
         <p>
           In Javascript we have something called prototypes, and all objects in
           javascript are linked to a certain prototype object. The prototype
@@ -175,7 +181,51 @@ const Classes = () => {
           of a class is always executed in 'strict mode'.
         </p>
 
-        <h3>Getters and Setters</h3>
+        <div className="section-header">Getters and Setters</div>
+        <p>
+          Getters and Setters are common to all objects in Javascript. All
+          Objects in javascript can have Getter and Setter Properties. And we
+          call these special properties <strong>Assessor Properties</strong>{" "}
+          where normal properties are called <strong>data properties</strong>.
+        </p>
+        <p>
+          Getters and Setters are functions that either GET or SET a value. But
+          on the outside they still look like normal properties.
+        </p>
+
+        <h3>Examples of Getters and Setters</h3>
+
+        <CodeJSBlock code={getterCode1} />
+
+        <p>
+          In the object they are written like a function only with the get or
+          set keyword. But then when we go to use Getters or Setters we use them
+          as we would any property.
+        </p>
+        <p>
+          Getters and Setters work exactly the same in JS Classes as they do in
+          Objects.
+        </p>
+
+        <p>
+          Getters and Setters are quite useful for data validation. Lets see how
+          they can help us with that.
+        </p>
+
+        <h3>Data Validation</h3>
+        <CodeJSBlock code={getterCode2} />
+
+        <p>
+          Since our setter is named the same as a property that already exists,
+          it will automatically get ran when we create a new instance of the
+          class. This will cause problems if you do not use the pattern above.
+          When using getters and setters that have the same name as properties
+          that already exist, you must within the getter or setter, refer to the
+          property with an underscore before the name. This infact creates a new
+          variable and that is why you must have the getter to then retrieve the
+          variable which is now under a different name.
+        </p>
+        <div className="section-header">Static Methods</div>
 
         <Footer complete={false} />
       </div>

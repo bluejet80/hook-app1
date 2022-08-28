@@ -53,3 +53,53 @@ export const classCode = `
         jarett.calcAge() // 57
 
 `;
+
+export const getterCode1 = `
+        const account = {
+            owner: 'Jarett',
+            movements: [200, 530, 120, 300],
+
+            get latest() {
+                return this.movements.slice(-1).pop();
+            }
+
+            set latest(mov) {
+                this.movement.push(mov)
+            }
+        }
+
+        console.log(account.latest) // 300
+
+        account.latest = 50
+        console.log(account.movements) // [200, 530, 120, 300, 50]
+
+`;
+
+export const getterCode2 = `
+        class Person {
+            constructor(fullName, birthYear) {
+                this.fullName = fullName;
+                this.birthYear = birthYear
+            }
+
+        calcAge() {
+            console.log(2037 - this.birthYear)
+        }
+
+        // Setting a property that already exists
+
+        set fullName(name) {
+            if(name.includes(' ')) this._fullName = name
+            else alert(\`\${name} is not a full name\`)
+        }
+
+        get fullName() {
+            return this._fullName
+        }
+
+        }
+
+        const jarett = new Person('Jarett Young',1980)
+        
+
+`;
