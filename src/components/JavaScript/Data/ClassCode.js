@@ -103,3 +103,60 @@ export const getterCode2 = `
         
 
 `;
+
+export const staticCode1 = `
+        const Person = function(firstName, birthYear) {
+            this.firstName = firstName
+            this.birthYear = birthYear 
+            
+            }
+
+        //static method
+
+        Person.hey = function() {
+            console.log("hello")
+        }
+
+        Person.hey() // hello
+
+        // Cannot do 
+
+        jarett.hey() // error
+
+`;
+
+export const staticCode2 = `
+        class Person {
+            constructor(fullName, birthYear) {
+                this.fullName = fullName;
+                this.birthYear = birthYear
+            }
+
+        calcAge() {
+            console.log(2037 - this.birthYear)
+        }
+
+        static hey() {
+            console.log("hello")
+        }
+
+    }
+
+`;
+
+export const objectCode1 = `
+        const PersonProto = {
+            calcAge() {
+                console.log(2037 - this.birthYear)
+            },
+            init(firstName, birthYear) {
+                this.firstName = firstName;
+                this.birthYear = birthYear
+            }
+        }
+
+        const steven = Object.create(PersonProto)
+        steven.init("steven",1955)
+        steven.calcAge() // 82
+
+`;

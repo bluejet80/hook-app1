@@ -1,11 +1,22 @@
-import { CodeJSBlock, Footer } from "../../index";
+import { CodeJSBlock, Footer, InternalLinkNav } from "../../index";
 import {
   constructCode,
   protoCode,
   classCode,
   getterCode1,
   getterCode2,
+  staticCode1,
+  staticCode2,
+  objectCode1,
 } from "../Data/ClassCode";
+
+const pageLinks = [
+  ["constfunct", "Constructor Functions"],
+  ["es6class", "ES6 Classes"],
+  ["getset", "Getters and Setters"],
+  ["static", "Static Methods"],
+  ["objcreate", "Object.create()"],
+];
 
 const Classes = () => {
   return (
@@ -14,6 +25,7 @@ const Classes = () => {
         <span className="title">Javascript Classes</span>
       </div>
       <div className="home-content">
+        <InternalLinkNav links={pageLinks} />
         <div className="section-header">Overview</div>
         <p>
           A class is like a theoretical blueprint used to build a bunch of
@@ -40,13 +52,14 @@ const Classes = () => {
         <div className="section-header">
           Three ways of Implementing OOP in JS
         </div>
-        <ul>
+        <ul className="square-list">
           <li>Constructor Functions</li>
           <li>ES6 Classes</li>
           <li>Object.create()</li>
         </ul>
 
         <h3>Constructor Functions</h3>
+
         <p>
           This is a way of creating classes programatically with a function,
           which will also set the new object's prototype. This is similar to how
@@ -118,7 +131,9 @@ const Classes = () => {
         <div className="section-header">
           Examples of The three ways to implement OOP in JS
         </div>
-        <h3>Constructor Functions</h3>
+        <h3>
+          <a id="constfunct">Constructor Functions</a>
+        </h3>
         <p>
           It is a convention within OOP that constructor functions always start
           with a capital lettter. Also a constructor function can not be an
@@ -164,7 +179,9 @@ const Classes = () => {
           the calcAge() Method.
         </p>
 
-        <h3>ES6 Classes</h3>
+        <h3>
+          <a id="es6class">ES6 Classes</a>
+        </h3>
         <p>Now we will do the same thing with ES6 Classes</p>
         <CodeJSBlock code={classCode} />
         <p>
@@ -181,7 +198,9 @@ const Classes = () => {
           of a class is always executed in 'strict mode'.
         </p>
 
-        <div className="section-header">Getters and Setters</div>
+        <div className="section-header">
+          <a id="getset">Getters and Setters</a>
+        </div>
         <p>
           Getters and Setters are common to all objects in Javascript. All
           Objects in javascript can have Getter and Setter Properties. And we
@@ -225,7 +244,64 @@ const Classes = () => {
           variable and that is why you must have the getter to then retrieve the
           variable which is now under a different name.
         </p>
-        <div className="section-header">Static Methods</div>
+        <div className="section-header">
+          <a id="static">Static Methods</a>
+        </div>
+        <p>
+          Static methods differe from regular Instance Methods in the fact that
+          Static Methods are attached to the entire constructor. They not
+          attached to the prototype property as other methods are. You cannot
+          run a Static Method on an instance of the class like you would a
+          normal method. The Static method is something that is ran on the Class
+          itself. Because static methods are not a part of the prototype
+          property they do not get inherited by the subClasses.{" "}
+        </p>
+
+        <p>
+          A good example of a Static Method is the <strong>Array.from()</strong>{" "}
+          method. Using this method we can create an array from other things. It
+          can also be said that the from method is in the Array namespace.
+        </p>
+        <p>
+          Another example is the <strong>Number.parseFloat()</strong> method.
+          This is also a static method.
+        </p>
+
+        <p>
+          Now Lets see an example in code of creating a static method both in a
+          constructor function and in a class.
+        </p>
+
+        <CodeJSBlock code={staticCode1} />
+        <p>Now with classes</p>
+        <CodeJSBlock code={staticCode2} />
+        <div className="section-header">
+          <a id="objcreate">Object.create</a>
+        </div>
+        <p>
+          With Object.create there still exists the idea of protoypal
+          inheritance. However, there is no prototype property, no constructor
+          function, and no new operator that is used. Instead we us
+          Object.create to manually set the prototype of an object to any other
+          object that we want.
+        </p>
+        <p>
+          So now using Object.create we will recreate the Person Object from
+          earlier. First we will start by calling it{" "}
+          <strong>PersonProto</strong> because this object is literally going to
+          be the prototype of all the Person objects that we create. Then we
+          will create a new person using the Object.create to set the prototype
+          to PersonProto. Then to add properties we added a{" "}
+          <strong>init()</strong> method that we will run which will assign
+          properties to that person.
+        </p>
+        <CodeJSBlock code={objectCode1} />
+
+        <p>
+          There for the main thing to understand here is that{" "}
+          <strong>Object.create()</strong> creates a new object and the
+          prototype of that object will be whatever object we pass in.
+        </p>
 
         <Footer complete={false} />
       </div>

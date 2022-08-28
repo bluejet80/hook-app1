@@ -42,7 +42,10 @@ const Fundamentals = () => {
           you know will change, then use let. Never use Var.
         </p>
         <div className="section-header">Operator Precedence</div>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table">
+        <a
+          className="blue-text"
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table"
+        >
           Link to MDN Precedence Website
         </a>
         <p>

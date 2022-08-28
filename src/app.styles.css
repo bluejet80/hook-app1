@@ -120,8 +120,6 @@
 
 .home-content a {
   font-family: "source sans";
-  font-size: 18px;
-  color: rgb(84, 84, 249);
   font-weight: bold;
 }
 strong {
@@ -130,6 +128,13 @@ strong {
 
 .white-text {
   color: #fff;
+}
+.back-text {
+  color: black;
+}
+.blue-text {
+  color: rgb(66, 66, 232);
+  font-size: 18px;
 }
 
 h3 {
@@ -143,8 +148,16 @@ h3 {
   font-family: "source sans";
   font-size: 18px;
   margin-left: 40px;
+}
+.square-list {
   list-style-type: square;
 }
+
+.no-list {
+  list-style-type: none;
+  font-size: 15px;
+}
+
 .home-content li {
   margin: 10px 0;
 }
