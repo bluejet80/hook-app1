@@ -8,6 +8,9 @@ import {
   staticCode1,
   staticCode2,
   objectCode1,
+  classInhereit1,
+  es6Inherit,
+  objectInherit,
 } from "../Data/ClassCode";
 
 const pageLinks = [
@@ -16,6 +19,7 @@ const pageLinks = [
   ["getset", "Getters and Setters"],
   ["static", "Static Methods"],
   ["objcreate", "Object.create()"],
+  ["classinherit", "Class Inheritance"],
 ];
 
 const Classes = () => {
@@ -302,6 +306,38 @@ const Classes = () => {
           <strong>Object.create()</strong> creates a new object and the
           prototype of that object will be whatever object we pass in.
         </p>
+        <div className="section-header">
+          <a id="classinherit">Class Inheritance</a>
+        </div>
+        <p>
+          Inheritance between classes is more like real inheritance that happens
+          normally in OOP. To illustrate this we will create a{" "}
+          <strong>Student Class</strong> and it will inherit the properties from
+          the <strong>Person Class</strong>. The Student Class will be a child
+          class of the Person Class. It is a more specific type of class
+          compared to the more general Person Class. So we can have specific
+          methods that only have to do with the Student class, all while also
+          having the more general mothods of the Person class. And we are gonna
+          implement this using constructor functions.
+        </p>
+
+        <p>
+          We will start by implementing this with constructor functions, then we
+          will use ES6 Classes and then finally we will use the Object.create()
+          function.
+        </p>
+
+        <h3>Constructor Function</h3>
+
+        <CodeJSBlock code={classInhereit1} />
+
+        <h3>ES6 Classes</h3>
+
+        <CodeJSBlock code={es6Inherit} />
+
+        <h3>Object.create()</h3>
+
+        <CodeJSBlock code={objectInherit} />
 
         <Footer complete={false} />
       </div>
