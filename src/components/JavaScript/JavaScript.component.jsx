@@ -20,6 +20,7 @@ import {
   ArrayForEach,
   Libraries,
   Docs,
+  Promises,
 } from "./components";
 
 // Data Arrays
@@ -35,6 +36,7 @@ const names = [
   "chaining",
   "closures",
   "destructuring",
+  "promises",
   "arrayreduce",
   "arraymap",
   "arrayfilter",
@@ -54,6 +56,7 @@ const elements = [
   <Chaining />,
   <Closures />,
   <Destructure />,
+  <Promises />,
   <ArrayReduce />,
   <ArrayMap />,
   <ArrayFilter />,

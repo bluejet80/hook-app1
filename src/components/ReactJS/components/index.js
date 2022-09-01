@@ -6,3 +6,4 @@ export { default as Libraries } from "./Libraries.component";
 export { default as ReactRouter } from "./ReactRouter.component";
 export { default as ReactWeb } from "./ReactWeb.component";
 export { default as Redux } from "./Redux.component";
+export { default as FetchAPI } from "./FetchAPI.component";

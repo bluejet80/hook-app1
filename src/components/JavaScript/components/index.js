@@ -14,3 +14,4 @@ export { default as ArrayFilter } from "./ArrayFilter.component";
 export { default as ArrayForEach } from "./ArrayForEach.component";
 export { default as Libraries } from "./Libraries.component";
 export { default as Docs } from "./Docs.component";
+export { default as Promises } from "./Promises.component";

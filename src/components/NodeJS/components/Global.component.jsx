@@ -1,5 +1,6 @@
 import { ObjectTable, CodeJSBlock, Footer } from "../../index";
 import { globalObject } from "../data/ObjectData";
+import { sysArgs } from "../data/nodeCode";
 const code1 = `
   setTimeout(() => {
       console.log('hello');
@@ -32,9 +33,23 @@ const Global = () => {
           <span className="code-span">global.console.log</span> which we write
           as just <span className="code-span">console.log</span>.
         </p>
+
+        <div className="section-header">Getting Args from CLI</div>
+        <p>
+          Here we will quickly go over getting arguments passed from the command
+          line to your program.
+        </p>
+        <CodeJSBlock code={sysArgs} />
+
+        <p>
+          This one line then produces an array of all the commandline arguments
+          that were passed when your program was ran.
+        </p>
+
         <div className="section-header">The Global Object</div>
         <p>This is a table of the methods in the global object</p>
         <ObjectTable list={globalObject} />
+
         <Footer complete={false} />
       </div>
     </div>

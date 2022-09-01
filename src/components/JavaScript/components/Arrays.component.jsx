@@ -46,8 +46,10 @@ const Arrays = () => {
         <p>Here are some examples:</p>
         <CodeJSBlock code={sortCode} />
         <h3>array.fill()</h3>
-        <p>This array method removes the FIRST element, and returns it.</p>
-        <p>You can also have function expressions as elements of an array</p>
+        <p>
+          This array method can be used to populate an array that already exists
+          with values, or objects, or arrays.
+        </p>
 
         <div className="section-header">
           Array Methods that Create a New Array
@@ -148,7 +150,10 @@ const Arrays = () => {
           passed to the method.
         </p>
         <h3>array.every()</h3>
-        <p></p>
+        <p>
+          This method returns true or false if every element of the array meets
+          a certain criteria.
+        </p>
 
         <div className="section-header">Other Array Methods</div>
         <h3>Array.from()</h3>

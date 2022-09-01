@@ -11,6 +11,7 @@ import {
   Libraries,
   Docs,
   ReactWeb,
+  FetchAPI,
 } from "./components";
 
 const names = [
@@ -18,6 +19,7 @@ const names = [
   "classcomp",
   "hooks",
   "jsx",
+  "fetchapi",
   "reactrouter",
   "libraries",
   "docs",
@@ -29,6 +31,7 @@ const elements = [
   <ClassComp />,
   <Hooks />,
   <JSX />,
+  <FetchAPI />,
   <ReactRouter />,
   <Libraries />,
   <Docs />,
