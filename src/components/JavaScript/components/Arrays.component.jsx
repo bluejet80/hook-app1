@@ -57,20 +57,80 @@ const Arrays = () => {
           untouched.
         </p>
         <h3>array.map()</h3>
+        <p>
+          This method will interate over an array and apply a callback function
+          to each element and then return the result as the element of a new
+          array. The process leaves the original array intact.
+        </p>
+        <p>
+          This method is used often to mutate arrays into other arrays. More
+          about this method as well as more examples are discussed in another
+          section.
+        </p>
         <h3>array.filter()</h3>
+        <p>
+          This method will return a new array of only the elements that satisfy
+          the conditional statement. It is a good way to filter an array and
+          only get back those elements that meet certain criteria.
+        </p>
+        <p>
+          This method could be used for variety of different techniques. More
+          information as well as examples are in the section dedicated to this
+          method.
+        </p>
         <h3>array.slice()</h3>
+        <p>
+          This method does basically the same thing as the splice() method
+          except that it doesn't effect the original array. Instead it returns a
+          new array. Which is a porttion of the original.
+        </p>
+        <p>
+          Using this method we can easily create a shallow copy of an array.
+        </p>
         <h3>array.concat()</h3>
+        <p>
+          This method is used to join two arrays together into one large array.
+        </p>
+        <p>The syntax is array1.concat(array2)</p>
         <h3>array.flat()</h3>
+        <p>
+          This method will take an array of arrays and return a single array of
+          elements
+        </p>
         <h3>array.flatMap()</h3>
+        <p>
+          Frequetly after using the Map() method we need to flatten the array.
+          And so instead of having to do two separate methods, this method rolls
+          them all into one.
+        </p>
 
         <div className="section-header">Return Array Index</div>
         <p>These methods will return an array index.</p>
         <h3>array.indexOf()</h3>
+        <p>
+          This method will give you the index of the element that matches the
+          value that you pass to the method.
+        </p>
         <h3>array.findIndex()</h3>
+        <p>
+          This method is similar to the last but instead of taking a value, the
+          method accepts a conditional statement. And then it returns the
+          indexes that satisfy the conditional statement.
+        </p>
 
         <div className="section-header">Return Array Element</div>
         <p>These methods will return an array element.</p>
         <h3>array.find()</h3>
+        <p>
+          This method returns the element that matches the callback function
+          that is passed to the method. Often this method is used to return
+          objects from arrays of objects using the value of the object key that
+          is desired.
+        </p>
+        <p>
+          There are many things that can be passed to the callback function
+          allowing for powerful funcitonality from this method.
+        </p>
 
         <div className="section-header">Know if Array Includes</div>
         <p>
@@ -78,8 +138,17 @@ const Arrays = () => {
           value is present.
         </p>
         <h3>array.includes()</h3>
+        <p>
+          Returns true or false if the array contains the value passed to the
+          method.
+        </p>
         <h3>array.some()</h3>
+        <p>
+          retruns true or false if the array contains atleast one of the values
+          passed to the method.
+        </p>
         <h3>array.every()</h3>
+        <p></p>
 
         <div className="section-header">Other Array Methods</div>
         <h3>Array.from()</h3>
