@@ -1,4 +1,6 @@
 import { Footer } from "../../index";
+import { DataTable } from "../../index";
+import { sandrepVim } from "../data/tableData";
 
 const Vim = () => {
   return (
@@ -7,8 +9,12 @@ const Vim = () => {
         <span className="title">Vim Information</span>
       </div>
       <div className="home-content white-text">
-        <div className="section-header">Heading 1</div>
-        <p>Paragraph1</p>
+        <div className="section-header">Search and replace</div>
+        <p>
+          Here are a few examples of the search and replace feature of Vim. The
+          "_" represents a space.
+        </p>
+        <DataTable list={sandrepVim} />
 
         <p>You can also have function expressions as elements of an array</p>
         <Footer complete={false} />

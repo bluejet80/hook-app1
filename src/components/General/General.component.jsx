@@ -13,6 +13,7 @@ import {
   Git,
   Npm,
   Freelance,
+  Study,
 } from "./components";
 
 const names = [
@@ -26,6 +27,7 @@ const names = [
   "organize",
   "git",
   "freelance",
+  "study",
 ];
 const colors = ["color5", "color11", "color8", "color16"];
 const elements = [
@@ -39,6 +41,7 @@ const elements = [
   <Organize />,
   <Git />,
   <Freelance />,
+  <Study />,
 ];
 
 const General = () => {

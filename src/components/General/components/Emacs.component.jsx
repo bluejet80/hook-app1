@@ -1,4 +1,14 @@
 import { Footer } from "../../index";
+import { DataTable } from "../../index";
+import {
+  emacsTable1,
+  emacsTable2,
+  emacsTable3,
+  emacsTable4,
+  emacstable5,
+} from "../data/tableData";
+import { emacsInit1 } from "../data/emacsInit";
+import { CodeCLBlock } from "../../CodeBlock.component";
 
 const Emacs = () => {
   return (
@@ -7,17 +17,23 @@ const Emacs = () => {
         <span className="title">Emacs Information</span>
       </div>
       <div className="home-content white-text">
-        <p>
-          So within this section I can have a table that will show all the
-          shortcuts and stuff related to Emacs
-        </p>
-        <p>
-          This information will be similar to that which is on the Reference
-          website that I made.
-        </p>
-        <div className="section-header">Heading 1</div>
-        <p>Paragraph1</p>
-        <p>You can also have function expressions as elements of an array</p>
+        <div className="section-header">Emacs Commands</div>
+        <h3>Text manipulation</h3>
+        <DataTable list={emacsTable1} />
+        <h3>To Move around text</h3>
+        <DataTable list={emacsTable2} />
+        <h3>Grow and Shrink Text</h3>
+        <DataTable list={emacsTable3} />
+        <h3>Buffers and Windows</h3>
+        <DataTable list={emacsTable4} />
+        <h3>Helpful Information</h3>
+        <DataTable list={emacstable5} />
+
+        <div className="section-header">Package Management</div>
+
+        <div className="section-header">Emacs init file</div>
+        <CodeCLBlock code={emacsInit1} />
+
         <Footer complete={false} />
       </div>
     </div>

@@ -35,3 +35,11 @@ export const CodeJSXBlock = (props) => {
     </div>
   );
 };
+
+export const CodeCLBlock = (props) => {
+  return (
+    <div className="code-block">
+      <CopyBlock text={props.code} language="lisp" theme={solarizedLight} />
+    </div>
+  );
+};

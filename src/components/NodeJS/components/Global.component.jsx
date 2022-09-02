@@ -1,6 +1,6 @@
 import { ObjectTable, CodeJSBlock, Footer } from "../../index";
 import { globalObject } from "../data/ObjectData";
-import { sysArgs } from "../data/nodeCode";
+import { sysArgs, dirCode } from "../data/nodeCode";
 const code1 = `
   setTimeout(() => {
       console.log('hello');
@@ -46,8 +46,14 @@ const Global = () => {
           that were passed when your program was ran.
         </p>
 
+        <div className="section-header">Useful Functions</div>
+        <h3>Show the current direcotry</h3>
+        <CodeJSBlock code={dirCode} />
+
+        <hr />
         <div className="section-header">The Global Object</div>
         <p>This is a table of the methods in the global object</p>
+
         <ObjectTable list={globalObject} />
 
         <Footer complete={false} />
