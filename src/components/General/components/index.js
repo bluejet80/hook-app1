@@ -9,3 +9,4 @@ export { default as Organize } from "./Organize.component";
 export { default as Git } from "./Git.component";
 export { default as Freelance } from "./Freelance.component";
 export { default as Study } from "./Study.component";
+export { default as RegEx} from "./RegEx.component"

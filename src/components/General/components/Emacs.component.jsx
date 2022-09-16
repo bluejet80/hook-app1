@@ -29,6 +29,8 @@ const Emacs = () => {
         <h3>Helpful Information</h3>
         <DataTable list={emacstable5} />
 
+        <div className="section-header">Org-Roam</div>
+
         <div className="section-header">Package Management</div>
 
         <div className="section-header">Emacs init file</div>

@@ -14,6 +14,7 @@ import {
   Npm,
   Freelance,
   Study,
+  RegEx,
 } from "./components";
 
 const names = [
@@ -28,6 +29,7 @@ const names = [
   "git",
   "freelance",
   "study",
+  "regex",
 ];
 const colors = ["color5", "color11", "color8", "color16"];
 const elements = [
@@ -42,6 +44,7 @@ const elements = [
   <Git />,
   <Freelance />,
   <Study />,
+  <RegEx />,
 ];
 
 const General = () => {
