@@ -12,9 +12,12 @@ export {
   CodeJSBlock,
   CodeJSXBlock,
 } from "./CodeBlock.component";
-export { default as DataTable } from "./tables/DataTable.componenet";
-export { default as DataTableLink } from "./tables/DataTableLink.componenet";
-export { default as DataTable3 } from "./tables/DataTable3.componenet";
+export {
+  DataTable,
+  DataTableLink,
+  DataTable3,
+} from "./tables/DataTable.componenet";
 export { default as ObjectTable } from "./tables/ObjectTable.componenet";
+export { UnorderedList1 } from "./tables/Lists.component";
 export { default as Footer } from "./Footer.component";
 export { default as InternalLinkNav } from "./InternalLinkNav.component";

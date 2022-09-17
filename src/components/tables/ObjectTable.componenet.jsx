@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const DataTable = (list) => {
+const objectTable = (list) => {
   return (
     <table className="table-main">
       {list.list.map((item, index) => {
@@ -16,4 +16,4 @@ const DataTable = (list) => {
   );
 };
 
-export default DataTable;
+export default objectTable;

@@ -224,3 +224,9 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.img1 {
+  position: relative;
+  left: 10%;
+  width: 80%;
+}
