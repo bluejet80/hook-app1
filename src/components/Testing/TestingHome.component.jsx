@@ -9,6 +9,10 @@ const TestingHome = () => {
           We are going to try to make a website for all the javascript learning
           information.
         </p>
+        <p>
+          I also want to add information about Agile project management to this
+          section.
+        </p>
       </div>
     </div>
   );
