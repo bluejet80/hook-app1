@@ -1,26 +1,28 @@
-import { CodeJSBlock, Footer } from "../../index";
+import { CodeJSBlock, FooterJS } from "../../index";
 import { ternaryCode1, ternaryCode2 } from "../Data/FundCode";
-import { assignList, commonList, compList } from "../Data/FundTables";
+import { pageStyles } from "../Data/styles";
 
 const Boolean = () => {
   return (
-    <div className="home-section color1">
-      <div className="header color2">
-        <span className="title">Booleans in Javascript</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Booleans in Javascript</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Boolean Logic</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Boolean Logic</div>
         <p>
           Boolean Logic is a branch of Computer Science that uses true and false
           values to solve complex logical problems.
         </p>
-        <div className="section-header">Several Logical Operators are used</div>
+        <div className={pageStyles.sectionHeader}>
+          Several Logical Operators are used
+        </div>
         <ul>
           <li>AND Operator &&</li>
           <li>OR Operator ||</li>
           <li>NOT Operator !</li>
         </ul>
-        <div className="section-header">The Conditional Operator</div>
+        <div className={pageStyles.sectionHeader}>The Conditional Operator</div>
         <p>This is also referred to as the Ternary Operator.</p>
         <CodeJSBlock code={ternaryCode1} />
         <p>Here we see the syntax and how the conditional operator works.</p>
@@ -33,7 +35,7 @@ const Boolean = () => {
           This also means that the conditional operator you can have
           conditionals inside the template literal
         </p>
-        <div className="section-header">5 Falsy Values</div>
+        <div className={pageStyles.sectionHeader}>5 Falsy Values</div>
         <ul>
           <li>Zero</li>
           <li>Empty String</li>
@@ -45,7 +47,7 @@ const Boolean = () => {
           Just like with numbers and strings you can use the Boolean() function
           to convert anything to boolean.
         </p>
-        <Footer complete={false} />
+        <FooterJS complete={false} />
       </div>
     </div>
   );

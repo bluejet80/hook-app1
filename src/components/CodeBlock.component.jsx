@@ -1,13 +1,9 @@
-import { CopyBlock, solarizedLight } from "react-code-blocks";
+import { CopyBlock, googlecode } from "react-code-blocks";
 
 export const CodeJSBlock = (props) => {
   return (
     <div className="code-block">
-      <CopyBlock
-        text={props.code}
-        language="javascript"
-        theme={solarizedLight}
-      />
+      <CopyBlock text={props.code} language="javascript" theme={googlecode} />
     </div>
   );
 };
@@ -15,7 +11,7 @@ export const CodeJSBlock = (props) => {
 export const CodeCSSBlock = (props) => {
   return (
     <div className="code-block">
-      <CopyBlock text={props.code} language="css" theme={solarizedLight} />
+      <CopyBlock text={props.code} language="css" theme={googlecode} />
     </div>
   );
 };
@@ -23,7 +19,7 @@ export const CodeCSSBlock = (props) => {
 export const CodeHTMLBlock = (props) => {
   return (
     <div className="code-block">
-      <CopyBlock text={props.code} language="html" theme={solarizedLight} />
+      <CopyBlock text={props.code} language="html" theme={googlecode} />
     </div>
   );
 };
@@ -31,7 +27,7 @@ export const CodeHTMLBlock = (props) => {
 export const CodeJSXBlock = (props) => {
   return (
     <div className="code-block">
-      <CopyBlock text={props.code} language="jsx" theme={solarizedLight} />
+      <CopyBlock text={props.code} language="jsx" theme={googlecode} />
     </div>
   );
 };
@@ -39,7 +35,7 @@ export const CodeJSXBlock = (props) => {
 export const CodeCLBlock = (props) => {
   return (
     <div className="code-block">
-      <CopyBlock text={props.code} language="lisp" theme={solarizedLight} />
+      <CopyBlock text={props.code} language="lisp" theme={googlecode} />
     </div>
   );
 };

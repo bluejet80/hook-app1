@@ -1,0 +1,49 @@
+.home-section-general {
+  display: inline-block;
+  width: 75%;
+  min-width: 300px;
+  height: 90vh;
+  border: solid black 1pt;
+  overflow: auto;
+}
+.header-general {
+  min-height: 3rem;
+  display: flex;
+  border-bottom: solid rgb(120, 120, 120) 3pt;
+}
+
+.title-general {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: auto;
+}
+.home-content-general {
+  padding: 1px;
+  min-height: 300px;
+}
+
+.home-content-general p {
+  font-family: "source sans";
+  font-size: 16px;
+  margin: 10px 30px;
+  text-indent: 10px;
+  letter-spacing: 0.5px;
+}
+
+.home-content-general a {
+  font-family: "source sans";
+  font-weight: bold;
+}
+
+.section-header-general {
+  font-family: "source sans";
+  width: 40%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 50px 10px;
+  border-radius: 5px;
+}

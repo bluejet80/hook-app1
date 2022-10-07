@@ -1,12 +1,13 @@
 import { Footer } from "../../index";
+import { pageStyles } from "../data/styles";
 const Animation = () => {
   return (
-    <div className="home-section color9">
-      <div className="header color11">
-        <span className="title">CSS Animation Stuff</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>CSS Animation Stuff</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Types of Animations</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Types of Animations</div>
         <p>Paragraph</p>
         <p>You can also have function expressions as elements of an array</p>
         <Footer complete={false} />

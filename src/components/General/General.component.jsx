@@ -31,7 +31,12 @@ const names = [
   "study",
   "regex",
 ];
-const colors = ["color5", "color11", "color8", "color16"];
+const colors = [
+  "general-color1",
+  "general-color2",
+  "general-color3",
+  "general-color4",
+];
 const elements = [
   <Vim />,
   <VSCode />,

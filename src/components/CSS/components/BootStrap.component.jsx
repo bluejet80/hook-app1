@@ -1,13 +1,14 @@
 import { Footer } from "../../index";
+import { pageStyles } from "../data/styles";
 
 const BootStrap = () => {
   return (
-    <div className="home-section color9">
-      <div className="header color11">
-        <span className="title">BootStrap Information</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>BootStrap Information</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Grid Setup</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Grid Setup</div>
         <p>Paragraph1</p>
         <p>You can also have function expressions as elements of an array</p>
         <Footer complete={false} />

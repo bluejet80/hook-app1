@@ -1,14 +1,17 @@
-import { CodeJSBlock, Footer } from "../../index";
+import { CodeJSBlock, FooterJS } from "../../index";
 import { arrowCode1, functCode1, functCode2 } from "../Data/FundCode";
+import { pageStyles } from "../Data/styles";
 
 const Functions = () => {
   return (
-    <div className="home-section color1">
-      <div className="header color2">
-        <span className="title">JavaScript Functions</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>JavaScript Functions</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Ways of Writing Functions</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>
+          Ways of Writing Functions
+        </div>
         <h3>Function Declaration</h3>
         <p>With a function declaration a name for the function is specified</p>
         <CodeJSBlock code={functCode1} />
@@ -34,7 +37,7 @@ const Functions = () => {
           Some programmers choose to have everything stored in a variable.
           Function expressions are a way of doing that.
         </p>
-        <div className="section-header">Arrow Functions</div>
+        <div className={pageStyles.sectionHeader}>Arrow Functions</div>
         <p>
           An arrow function is a shorter form of function expression that is
           more compact and easier to write. However Arrow functions DO NOT get a
@@ -42,7 +45,7 @@ const Functions = () => {
         </p>
         <CodeJSBlock code={arrowCode1} />
         <p>You can also have function expressions as elements of an array</p>
-        <Footer complete={true} />
+        <FooterJS complete={true} />
       </div>
     </div>
   );

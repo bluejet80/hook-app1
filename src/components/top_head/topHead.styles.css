@@ -29,10 +29,10 @@
   color: #fff;
 }
 .top-head a:hover {
-  color: rgb(43, 223, 255);
+  color: var(--flat-sun-flower);
 }
 
 .main-links .active {
-  color: rgb(43, 223, 255);
+  color: var(--flat-sun-flower);
   font-weight: bold;
 }

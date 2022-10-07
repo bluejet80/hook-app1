@@ -2,15 +2,16 @@ import { Footer } from "../../index";
 import { DataTable, CodeJSBlock } from "../../index";
 import { regexTable1, regexTable2 } from "../data/tableData";
 import { regEx1, regEx2 } from "../data/codeData";
+import { pageStyles } from "../data/styles";
 
 const RegEx = () => {
   return (
-    <div className="home-section color11">
-      <div className="header color5">
-        <span className="title">Regular Expressions</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Regular Expressions</span>
       </div>
-      <div className="home-content white-text">
-        <div className="section-header">Reference Table</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Reference Table</div>
         <p>
           This is a Javascript reference table. Its different if you are working
           with sed on the command line.
@@ -18,7 +19,7 @@ const RegEx = () => {
         <DataTable list={regexTable1} />
         <p>This is the Table for working on the command line:</p>
         <DataTable list={regexTable2} />
-        <div className="section-header">Useful Processes</div>
+        <div className={pageStyles.sectionHeader}>Useful Processes</div>
         <h3>Add Zeros to filenames</h3>
         <p>
           Frequently to get files to display in the correct order you must add a
@@ -37,7 +38,7 @@ const RegEx = () => {
         </p>
         <p>Here is how you run that program</p>
         <p className="highlight">img2pdf *.jpg -o name_of_pdf.pdf</p>
-        <div className="section-header">Regex in JavaScript</div>
+        <div className={pageStyles.sectionHeader}>Regex in JavaScript</div>
         <p>
           Regular exspressions are patterns used to match character combinations
           in strings. In Javascript, regular expressions are also objects. These

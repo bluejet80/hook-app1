@@ -44,7 +44,7 @@ const names = [
   "libraries",
   "docs",
 ];
-const colors = ["color1", "color2", "color3", "color4"];
+const colors = ["js-color1", "js-color2", "js-color3", "js-color4"];
 const elements = [
   <Fundamentals />,
   <Boolean />,

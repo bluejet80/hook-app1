@@ -39,7 +39,7 @@ const links = [
   <FlexGrid />,
   <Tables />,
 ];
-const colors = ["color9", "color10", "color11", "color12"];
+const colors = ["css-color1", "css-color2", "css-color3", "css-color4"];
 
 const CSS = () => {
   return (

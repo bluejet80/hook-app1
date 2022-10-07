@@ -1,17 +1,18 @@
-import { Footer } from "../../index";
+import { FooterJS } from "../../index";
+import { pageStyles } from "../Data/styles";
 
 const ArrayMap = () => {
   return (
-    <div className="home-section color1">
-      <div className="header color2">
-        <span className="title">Map Array Method</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Map Array Method</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Heading 1</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Heading 1</div>
         <p>Paragraph1</p>
 
         <p>You can also have function expressions as elements of an array</p>
-        <Footer complete={false} />
+        <FooterJS complete={false} />
       </div>
     </div>
   );

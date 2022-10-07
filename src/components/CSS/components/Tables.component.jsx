@@ -1,18 +1,19 @@
 import { CodeCSSBlock, CodeJSXBlock, Footer } from "../../index";
 import { TableCSS, TableJsx } from "../data/tablecode";
+import { pageStyles } from "../data/styles";
 
 const Tables = () => {
   return (
-    <div className="home-section color9">
-      <div className="header color11">
-        <span className="title">Styling Tables</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Styling Tables</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Example CSS</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Example CSS</div>
         <CodeCSSBlock code={TableCSS} />
         <p>Here is the JSX</p>
         <CodeJSXBlock code={TableJsx} />
-        <p>You can also have function expressions as elements of an array</p>
+        <p>Paragraph</p>
         <Footer complete={false} />
       </div>
     </div>

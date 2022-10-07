@@ -1,13 +1,14 @@
 import { Footer } from "../../index";
+import { pageStyles } from "../data/styles";
 
 const Study = () => {
   return (
-    <div className="home-section color11">
-      <div className="header color5">
-        <span className="title">Study Helpers</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Study Helpers</span>
       </div>
-      <div className="home-content white-text">
-        <div className="section-header">Fundamentals of Study</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Fundamentals of Study</div>
         <h3>Retaining more information</h3>
         <p>
           Write down and grasp key points in the lecture. Then immediately

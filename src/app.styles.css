@@ -1,3 +1,6 @@
+@import url(./colors.css);
+/* Fonts */
+
 @font-face {
   font-family: "source sans";
   src: url("fonts/SourceSansPro-Regular.ttf") format("truetype");
@@ -7,6 +10,110 @@
   src: url("fonts/Lato-Regular.ttf") format("truetype");
 }
 
+/* Colors */
+
+/* CSS Page */
+
+.css-color1 {
+  background: var(--desat-lt-blue);
+}
+.css-color2 {
+  background: var(--win8-cyan);
+}
+.css-color3 {
+  background: var(--metro-yellow);
+}
+.css-color4 {
+  background: var(--flat-carrot);
+}
+
+/* General Page */
+
+.general-color1 {
+  background: var(--desat-red);
+}
+.general-color2 {
+  background: var(--desat-river-lt);
+}
+.general-color3 {
+  background: var(--desat-river);
+}
+.general-color4 {
+  background: var(--desat-belize-hole);
+}
+/* Javascript Page */
+
+.js-color1 {
+  background: var(--flat-green-sea);
+}
+.js-color2 {
+  background: var(--desat-sand);
+}
+.js-color3 {
+  background: var(--desat-yellow);
+}
+.js-color4 {
+  background: var(--win8-crimson);
+}
+
+/* NodeJS Page */
+
+.node-color1 {
+  background: var(--color5);
+}
+.node-color2 {
+  background: var(--color6);
+}
+.node-color3 {
+  background: var(--color7);
+}
+.node-color4 {
+  background: var(--color8);
+}
+
+/* React Page */
+
+.react-color1 {
+  background: var(--color17);
+}
+.react-color2 {
+  background: var(--color18);
+}
+.react-color3 {
+  background: var(--color19);
+}
+.react-color4 {
+  background: var(--color20);
+}
+/* Testing Page */
+
+.testing-color1 {
+  background: var(--color21);
+}
+.testing-color2 {
+  background: var(--color22);
+}
+.testing-color3 {
+  background: var(--color23);
+}
+.testing-color4 {
+  background: var(--color24);
+}
+
+/* More Colors */
+
+.white-text {
+  color: var(--white);
+}
+.back-text {
+  color: var(--black);
+}
+.blue-text {
+  color: var(--flat-peter-river);
+  font-size: 18px;
+}
+
+/* Main */
 .App {
   display: grid;
   width: 100%;
@@ -54,36 +161,6 @@
 
 /* Styles for the Home Elements */
 
-:root {
-  --color13: #d5f4e6;
-  --color14: #80ced6;
-  --color15: #fefbd8;
-  --color16: #618685;
-
-  --color17: #d5f4e6;
-  --color18: #80ced6;
-  --color19: #fefbd8;
-  --color20: #618685;
-
-  --color21: #d5f4e6;
-  --color22: #80ced6;
-  --color23: #fefbd8;
-  --color24: #618685;
-}
-
-.color1 {
-  background: var(--color1);
-}
-.color2 {
-  background: var(--color2);
-}
-.color3 {
-  background: var(--color3);
-}
-.color4 {
-  background: var(--color4);
-}
-
 .home-section {
   display: inline-block;
   width: 75%;
@@ -122,19 +199,21 @@
   font-family: "source sans";
   font-weight: bold;
 }
-strong {
-  text-decoration: underline;
+
+.section-header {
+  background: var(--color13);
+  font-family: "source sans";
+  width: 40%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 50px 10px;
+  border-radius: 5px;
 }
 
-.white-text {
-  color: #fff;
-}
-.back-text {
-  color: black;
-}
-.blue-text {
-  color: rgb(66, 66, 232);
-  font-size: 18px;
+strong {
+  text-decoration: underline;
 }
 
 h3 {
@@ -143,16 +222,30 @@ h3 {
   letter-spacing: 0.5px;
   margin-left: 30px;
 }
+
 .highlight {
   background: rgba(44, 234, 255, 0.25);
   padding: 3px;
 }
+
+/* internal links */
+
+.internal-link-nav {
+  height: fit-content;
+  border: 1px black solid;
+}
+.main-links li {
+  margin: 10px;
+}
+
+/* lists */
 
 .home-content ul {
   font-family: "source sans";
   font-size: 18px;
   margin-left: 40px;
 }
+
 .square-list {
   list-style-type: square;
 }
@@ -166,24 +259,12 @@ h3 {
   margin: 10px 0;
 }
 
-.section-header {
-  background: linear-gradient(#d5f4e6, #99a0a8);
-  font-family: "source sans";
-  width: 30%;
-  padding: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-bottom: 3pt solid rgb(78, 194, 253);
-  clip-path: polygon(0 0, 0 100%, 60% 100%, 100% 60%, 100% 0);
-  margin: 50px 10px;
-  border-radius: 5px;
-}
+/* table */
 
 .table-main {
   table-layout: auto;
   width: 70%;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   padding: 3px;
   text-align: center;
   border-collapse: collapse;
@@ -193,9 +274,10 @@ h3 {
 
 .table-cell {
   padding: 10px;
-  border-left: 1px grey solid;
-  border-bottom: 1px grey solid;
+  border: 3px solid rgb(132, 132, 132);
 }
+
+/*code*/
 
 .code-block {
   margin: 30px;
@@ -211,12 +293,15 @@ h3 {
   font-size: 14px;
 }
 
+/* footer */
+
 .footer {
   text-align: center;
   height: 150px;
   margin: 50px 0px;
   border-top: solid black 2pt;
   padding: 20px 0px;
+  background: var(--metro-light-blue);
 }
 .footer-title {
   font-size: 22px;

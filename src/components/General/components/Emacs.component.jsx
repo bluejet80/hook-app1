@@ -9,15 +9,16 @@ import {
 } from "../data/tableData";
 import { emacsInit1 } from "../data/emacsInit";
 import { CodeCLBlock } from "../../CodeBlock.component";
+import { pageStyles } from "../data/styles";
 
 const Emacs = () => {
   return (
-    <div className="home-section color11">
-      <div className="header color5">
-        <span className="title">Emacs Information</span>
+    <div className={pageStyles.homeContent}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Emacs Information</span>
       </div>
-      <div className="home-content white-text">
-        <div className="section-header">Emacs Commands</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Emacs Commands</div>
         <h3>Text manipulation</h3>
         <DataTable list={emacsTable1} />
         <h3>To Move around text</h3>
@@ -29,11 +30,11 @@ const Emacs = () => {
         <h3>Helpful Information</h3>
         <DataTable list={emacstable5} />
 
-        <div className="section-header">Org-Roam</div>
+        <div className={pageStyles.sectionHeader}>Org-Roam</div>
 
-        <div className="section-header">Package Management</div>
+        <div className={pageStyles.sectionHeader}>Package Management</div>
 
-        <div className="section-header">Emacs init file</div>
+        <div className={pageStyles.sectionHeader}>Emacs init file</div>
         <CodeCLBlock code={emacsInit1} />
 
         <Footer complete={false} />

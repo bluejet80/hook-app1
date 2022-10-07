@@ -1,13 +1,14 @@
-import { CodeJSBlock, Footer } from "../../index";
+import { CodeJSBlock, FooterJS } from "../../index";
 import { sortCode } from "../Data/FundCode";
+import { pageStyles } from "../Data/styles";
 const Arrays = () => {
   return (
-    <div className="home-section color1">
-      <div className="header color2">
-        <span className="title">JavaScript Arrays</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>JavaScript Arrays</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>
           Array Methods that Mutate Original Array
         </div>
         <h3>array.push()</h3>
@@ -51,7 +52,7 @@ const Arrays = () => {
           with values, or objects, or arrays.
         </p>
 
-        <div className="section-header">
+        <div className={pageStyles.sectionHeader}>
           Array Methods that Create a New Array
         </div>
         <p>
@@ -106,7 +107,7 @@ const Arrays = () => {
           them all into one.
         </p>
 
-        <div className="section-header">Return Array Index</div>
+        <div className={pageStyles.sectionHeader}>Return Array Index</div>
         <p>These methods will return an array index.</p>
         <h3>array.indexOf()</h3>
         <p>
@@ -120,7 +121,7 @@ const Arrays = () => {
           indexes that satisfy the conditional statement.
         </p>
 
-        <div className="section-header">Return Array Element</div>
+        <div className={pageStyles.sectionHeader}>Return Array Element</div>
         <p>These methods will return an array element.</p>
         <h3>array.find()</h3>
         <p>
@@ -134,7 +135,7 @@ const Arrays = () => {
           allowing for powerful funcitonality from this method.
         </p>
 
-        <div className="section-header">Know if Array Includes</div>
+        <div className={pageStyles.sectionHeader}>Know if Array Includes</div>
         <p>
           These methods will return true or false if the condition is met, or a
           value is present.
@@ -155,7 +156,7 @@ const Arrays = () => {
           a certain criteria.
         </p>
 
-        <div className="section-header">Other Array Methods</div>
+        <div className={pageStyles.sectionHeader}>Other Array Methods</div>
         <h3>Array.from()</h3>
         <p>
           This is a static method and it is used to create arrays from other
@@ -177,7 +178,7 @@ const Arrays = () => {
           function. This method is also covered in more detail in another
           section.
         </p>
-        <Footer complete={false} />
+        <FooterJS complete={false} />
       </div>
     </div>
   );

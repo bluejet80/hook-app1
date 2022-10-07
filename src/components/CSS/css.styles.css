@@ -1,19 +1,49 @@
-:root {
-  --color9: #83ae8e;
-  --color10: #b2ad7f;
-  --color11: #6f96c7;
-  --color12: #8770c3;
+.home-section-css {
+  display: inline-block;
+  width: 75%;
+  min-width: 300px;
+  height: 90vh;
+  border: solid black 1pt;
+  overflow: auto;
+}
+.header-css {
+  min-height: 3rem;
+  display: flex;
+  border-bottom: solid rgb(120, 120, 120) 3pt;
 }
 
-.color9 {
-  background: var(--color9);
+.title-css {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: auto;
 }
-.color10 {
-  background: var(--color10);
+.home-content-css {
+  padding: 1px;
+  min-height: 300px;
 }
-.color11 {
-  background: var(--color11);
+
+.home-content-css p {
+  font-family: "source sans";
+  font-size: 16px;
+  margin: 10px 30px;
+  text-indent: 10px;
+  letter-spacing: 0.5px;
 }
-.color12 {
-  background: var(--color12);
+
+.home-content-css a {
+  font-family: "source sans";
+  font-weight: bold;
+}
+
+.section-header-css {
+  font-family: "source sans";
+  width: 40%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 50px 10px;
+  border-radius: 5px;
 }

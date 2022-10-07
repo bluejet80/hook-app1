@@ -12,6 +12,7 @@ import {
   es6Inherit,
   objectInherit,
 } from "../Data/ClassCode";
+import { pageStyles } from "../Data/styles";
 
 const pageLinks = [
   ["constfunct", "Constructor Functions"],
@@ -24,13 +25,13 @@ const pageLinks = [
 
 const Classes = () => {
   return (
-    <div className="home-section color1">
-      <div className="header color2">
-        <span className="title">Javascript Classes</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Javascript Classes</span>
       </div>
-      <div className="home-content">
+      <div className={pageStyles.homeContent}>
         <InternalLinkNav links={pageLinks} />
-        <div className="section-header">Overview</div>
+        <div className={pageStyles.sectionHeader}>Overview</div>
         <p>
           A class is like a theoretical blueprint used to build a bunch of
           houses, or instances. The theoretical class can be used to create
@@ -53,7 +54,7 @@ const Classes = () => {
           class.
         </p>
 
-        <div className="section-header">
+        <div className={pageStyles.sectionHeader}>
           Three ways of Implementing OOP in JS
         </div>
         <ul className="square-list">
@@ -86,7 +87,7 @@ const Classes = () => {
           to a prtotype object. However is is not used very much.
         </p>
 
-        <div className="section-header">
+        <div className={pageStyles.sectionHeader}>
           The Four Principals of Object Oriented Programming
         </div>
         <p>
@@ -132,7 +133,7 @@ const Classes = () => {
           class, which is the same name as the one inherited from the parent
           class, but give it different characteristics and properties.
         </p>
-        <div className="section-header">
+        <div className={pageStyles.sectionHeader}>
           Examples of The three ways to implement OOP in JS
         </div>
         <h3>
@@ -202,7 +203,7 @@ const Classes = () => {
           of a class is always executed in 'strict mode'.
         </p>
 
-        <div className="section-header">
+        <div className={pageStyles.sectionHeader}>
           <a id="getset">Getters and Setters</a>
         </div>
         <p>
@@ -248,7 +249,7 @@ const Classes = () => {
           variable and that is why you must have the getter to then retrieve the
           variable which is now under a different name.
         </p>
-        <div className="section-header">
+        <div className={pageStyles.sectionHeader}>
           <a id="static">Static Methods</a>
         </div>
         <p>
@@ -279,7 +280,7 @@ const Classes = () => {
         <CodeJSBlock code={staticCode1} />
         <p>Now with classes</p>
         <CodeJSBlock code={staticCode2} />
-        <div className="section-header">
+        <div className={pageStyles.sectionHeader}>
           <a id="objcreate">Object.create</a>
         </div>
         <p>
@@ -306,7 +307,7 @@ const Classes = () => {
           <strong>Object.create()</strong> creates a new object and the
           prototype of that object will be whatever object we pass in.
         </p>
-        <div className="section-header">
+        <div className={pageStyles.sectionHeader}>
           <a id="classinherit">Class Inheritance</a>
         </div>
         <p>

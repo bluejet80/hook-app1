@@ -1,0 +1,92 @@
+:root {
+  /* flat colors */
+  --flat-turquoise: #1abc9c;
+  --flat-green-sea: #29848d;
+  --flat-emerald: #2ecc71;
+  --flat-nephritis: #27ae60;
+  --flat-peter-river: #3498db;
+  --flat-belize-hole: #2980b9;
+  --flat-amethyst: #9b59b6;
+  --flat-wisteria: #8e44ad;
+  --flat-wet-asphalt: #34495e;
+  --flat-midnight-blue: #2c3e50;
+  --flat-sun-flower: #f1c40f;
+  --flat-orange: #f39c12;
+  --flat-carrot: #e67e22;
+  --flat-pumpkin: #d35400;
+  --flat-alizarin: #e74c3c;
+  --flat-pomegranate: #c0392b;
+  --flat-clouds: #ecf0f1;
+  --flat-silver: #bdc3c7;
+  --flat-concrete: #95a5a6;
+  --flat-asbestos: #7f8c8d;
+
+  /* Metro Colors */
+  --metro-light-green: #99b433;
+  --metro-green: #00a300;
+  --metro-dark-green: #1e7145;
+  --metro-magenta: #ff0097;
+  --metro-light-purple: #9f00a7;
+  --metro-purple: #7e3878;
+  --metro-dark-purple: #603cba;
+  --metro-darken: #1d1d1d;
+  --metro-teal: #00aba9;
+  --metro-light-blue: #eff4ff;
+  --metro-blue: #2d89ef;
+  --metro-dark-blue: #2b5797;
+  --metro-yellow: #ffc40d;
+  --metro-orange: #e3a21a;
+  --metro-dark-orange: #da532c;
+  --metro-red: #ee1111;
+  --metro-dark-red: #c8214d;
+
+  /* Windows Colors*/
+  --win8-lime: #a4c400;
+  --win8-green: #60a917;
+  --win8-emerald: #008a00;
+  --win8-teal: #00aba9;
+  --win8-cyan: #1ba1e2;
+  --win8-blue: #3e65ff;
+  --win8-indigo: #6a00ff;
+  --win8-cobalt: #0050ef;
+  --win8-violet: #aa00ff;
+  --win8-pink: #f472d0;
+  --win8-magenta: #d80073;
+  --win8-crimson: #af2847;
+  --win8-red: #e51400;
+  --win8-orange: #fa6800;
+  --win8-amber: #f0a30a;
+  --win8-yellow: #e3c800;
+  --win8-brown: #825a2c;
+  --win8-olive: #6d8764;
+  --win8-steel: #647687;
+  --win8-mauve: #76608a;
+  --win8-taupe: #87794e;
+  --win8-sienna: #a0522d;
+
+  /* desaturated */
+  --desat-emerald: #57c483;
+  --desat-nephritis: #46b576;
+  --desat-river: #8eeaec;
+  --desat-river-lt: #cdf5f6;
+  --desat-belize-hole: #4e91be;
+  --desat-lt-blue: #9bbfe9;
+  --desat-dark-blue: #426596;
+  --desat-yellow: #f0c84e;
+  --desat-sand: #f1edab;
+  --desat-brown: #c8912b;
+  --desat-dark-orange: #d66b4e;
+  --desat-lt-red: #e05050;
+  --desat-dark-red: #bb4a68;
+  --desat-blue: #617dec;
+  --desat-indigo: #9d65ed;
+  --desat-cobalt: #5282e2;
+  --desat-violet: #bf63ee;
+  --desat-pink: #f5a0dd;
+  --desat-magenta: #cc488e;
+  --desat-crimson: #a43c55;
+  --desat-red: #d64639;
+
+  --black: #000000;
+  --white: #ffffff;
+}

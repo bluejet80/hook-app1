@@ -1,13 +1,14 @@
-import { Footer } from "../../index";
+import { FooterJS } from "../../index";
+import { pageStyles } from "../Data/styles";
 
 const Strings = () => {
   return (
-    <div className="home-section color1">
-      <div className="header color2">
-        <span className="title">JavaScript Strings</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>JavaScript Strings</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Working with Strings</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Working with Strings</div>
         <p>
           An arrow function is a shorter form of function expression that is
           more compact and easier to write. However Arrow functions DO NOT get a
@@ -15,7 +16,7 @@ const Strings = () => {
         </p>
 
         <p>You can also have function expressions as elements of an array</p>
-        <Footer complete={true} />
+        <FooterJS complete={true} />
       </div>
     </div>
   );

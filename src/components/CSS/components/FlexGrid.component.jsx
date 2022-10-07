@@ -1,13 +1,14 @@
 import { Footer } from "../../index";
+import { pageStyles } from "../data/styles";
 
 const FlexGrid = () => {
   return (
-    <div className="home-section color9">
-      <div className="header color11">
-        <span className="title">CSS FlexGrid</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>CSS FlexGrid</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">FlexBox Fundamentals</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>FlexBox Fundamentals</div>
         <p>Paragraph1</p>
         <p>You can also have function expressions as elements of an array</p>
         <Footer complete={false} />

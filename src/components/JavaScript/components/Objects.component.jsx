@@ -1,21 +1,22 @@
-import { Footer } from "../../index";
+import { FooterJS } from "../../index";
+import { pageStyles } from "../Data/styles";
 
 const Objects = () => {
   return (
-    <div className="home-section color1">
-      <div className="header color2">
-        <span className="title">JavaScript Objects</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>JavaScript Objects</span>
       </div>
-      <div className="home-content">
+      <div className={pageStyles.homeContent}>
         <p>Here we explain more about Javascript Objects.</p>
-        <div className="section-header">Arrow Functions</div>
+        <div className={pageStyles.sectionHeader}>Arrow Functions</div>
         <p>
           An arrow function is a shorter form of function expression that is
           more compact and easier to write. However Arrow functions DO NOT get a
           'this' keyword.
         </p>
 
-        <Footer complete={false} />
+        <FooterJS complete={false} />
       </div>
     </div>
   );

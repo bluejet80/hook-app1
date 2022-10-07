@@ -1,4 +1,4 @@
-import { DataTable, CodeJSBlock, Footer } from "../../index";
+import { DataTable, CodeJSBlock, FooterJS } from "../../index";
 import {
   conversionCode,
   equalCode,
@@ -8,40 +8,43 @@ import {
   tempLit3,
 } from "../Data/FundCode";
 import { assignList, commonList, compList } from "../Data/FundTables";
+import { pageStyles } from "../Data/styles";
 
 const Fundamentals = () => {
   return (
-    <div className="home-section color1">
-      <div className="header color2">
-        <span className="title">JavaScript Fundamentals</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>JavaScript Fundamentals</span>
       </div>
-      <div className="home-content">
+      <div className={pageStyles.homeContent}>
         <p>
           Here includes all the fundamental aspects of Javascript. i tend to
           think of the fundamentals as a very important part of any knowledge
           base. No matter how advanced you bevcome in your knowledge you are
           still at the mercy of the fundamenta aspects of that thing.
         </p>
-        <div className="section-header">Assignment Operators</div>
+        <div className={pageStyles.sectionHeader}>Assignment Operators</div>
         <DataTable list={assignList} />
-        <div className="section-header">Common things</div>
+        <div className={pageStyles.sectionHeader}>Common things</div>
         <DataTable list={commonList} />
-        <div className="section-header">Comparison Operators</div>
+        <div className={pageStyles.sectionHeader}>Comparison Operators</div>
         <DataTable list={compList} />
-        <div className="section-header">Type Coersion and Conversion</div>
+        <div className={pageStyles.sectionHeader}>
+          Type Coersion and Conversion
+        </div>
         <p>
           You can use the Number() function to convert a string to a number and
           then the String() function to convert a number to a string.
         </p>
         <p>There is also a couple of things to note here:</p>
         <CodeJSBlock code={conversionCode} />
-        <div className="section-header">Let,Const and Var</div>
+        <div className={pageStyles.sectionHeader}>Let,Const and Var</div>
 
         <p>
           It's simple. Always use Const unless you are creating a variable that
           you know will change, then use let. Never use Var.
         </p>
-        <div className="section-header">Operator Precedence</div>
+        <div className={pageStyles.sectionHeader}>Operator Precedence</div>
         <a
           className="blue-text"
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table"
@@ -51,7 +54,9 @@ const Fundamentals = () => {
         <p>
           This is all about the order in which the operators will be executed.
         </p>
-        <div className="section-header">String and Template Literals</div>
+        <div className={pageStyles.sectionHeader}>
+          String and Template Literals
+        </div>
         <p>
           There are a couple of different ways of getting variables into
           strings.
@@ -71,26 +76,26 @@ const Fundamentals = () => {
           Also you can introduce newlines very easily with the backticks as
           well.
         </p>
-        <div className="section-header">Equality Operators</div>
+        <div className={pageStyles.sectionHeader}>Equality Operators</div>
         <p>
           The == is a loose equality operator. It will show equality for strings
           and numbers
         </p>
         <CodeJSBlock code={equalCode} />
         <p>Always use the triple equals ===</p>
-        <div className="section-header">The Switch Statement</div>
+        <div className={pageStyles.sectionHeader}>The Switch Statement</div>
         <p>
           Just remember to add a break keyword after each case in the switch
           statement
         </p>
         <CodeJSBlock code={switchCode} />
-        <div className="section-header">Strict Mode</div>
+        <div className={pageStyles.sectionHeader}>Strict Mode</div>
         <p>Strict Mode is a mode that makes your code more secure</p>
         <p>
           You implement Strict Mode by adding the string 'use strict' to the
           beginning of your script file.
         </p>
-        <Footer complete={true} />
+        <FooterJS complete={true} />
       </div>
     </div>
   );

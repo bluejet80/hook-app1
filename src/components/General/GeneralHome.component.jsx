@@ -1,10 +1,14 @@
+import { pageStyles } from "./data/styles";
+
 const GeneralHome = () => {
   return (
-    <div className="home-section color11">
-      <div className="header color5">
-        <span className="title">General Information about stuff</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>
+          General Information about stuff
+        </span>
       </div>
-      <div className="home-content white-text">
+      <div className={pageStyles.homeContent}>
         <p>
           We are going to try to make a website for all the javascript learning
           information.

@@ -17,4 +17,5 @@ export { default as DataTableLink } from "./tables/DataTableLink.componenet";
 export { default as DataTable3 } from "./tables/DataTable3.componenet";
 export { default as ObjectTable } from "./tables/ObjectTable.componenet";
 export { default as Footer } from "./Footer.component";
+export { default as FooterJS } from "./FooterJS.component";
 export { default as InternalLinkNav } from "./InternalLinkNav.component";
