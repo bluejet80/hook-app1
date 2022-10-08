@@ -1,4 +1,5 @@
 import { DataTable } from "../index";
+import { pageStyles } from "./data/styles";
 
 const runNode = [
   ["node", "Run the Node REPL in terminal"],
@@ -9,18 +10,18 @@ const runNode = [
 
 const NodeJSHome = () => {
   return (
-    <div className="home-section color6">
-      <div className="header color5">
-        <span className="title">NodeJS Studies</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>NodeJS Studies</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Node.js Basics</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Node.js Basics</div>
         <p>
           Node is an environment that allows you to run javascript code outside
           of the browser.
         </p>
         <DataTable list={runNode} />
-        <div className="section-header">Upgrading Node and NPM</div>
+        <div className={pageStyles.sectionHeader}>Upgrading Node and NPM</div>
         <p>Here is information on how to upgrade node and npm.</p>
       </div>
     </div>

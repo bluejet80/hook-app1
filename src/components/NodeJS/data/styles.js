@@ -1,7 +1,7 @@
 export const pageStyles = {
-  homeSection: "home-section-node node-color4",
-  header: "header-node node-color1",
+  homeSection: "home-section-node node-color1",
+  header: "header-node node-color3",
   title: "title-node",
-  homeContent: "home-content-node node-color3",
-  sectionHeader: "section-header-node node-color2",
+  homeContent: "home-content-node node-color2",
+  sectionHeader: "section-header-node node-color4",
 };

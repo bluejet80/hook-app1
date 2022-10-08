@@ -45,7 +45,7 @@ const links = [
   <Resources />,
   <Docs />,
 ];
-const colors = ["color5", "color6", "color7", "color8"];
+const colors = ["node-color1", "node-color2", "node-color3", "node-color4"];
 
 const NodeJS = () => {
   return (

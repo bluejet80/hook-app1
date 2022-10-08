@@ -13,7 +13,7 @@ import { pageStyles } from "../data/styles";
 
 const Emacs = () => {
   return (
-    <div className={pageStyles.homeContent}>
+    <div className={pageStyles.homeSection}>
       <div className={pageStyles.header}>
         <span className={pageStyles.title}>Emacs Information</span>
       </div>

@@ -7,8 +7,8 @@ const Git = () => {
       <div className={pageStyles.header}>
         <span className={pageStyles.title}>Git Information</span>
       </div>
-      <div className="home-content white-text">
-        <div className="section-header">Git config</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Git config</div>
         <p>
           Setup author name and mail to be used for all commits in current
           repository. Normally the --global flag is used to set config options
@@ -19,10 +19,10 @@ const Git = () => {
           git config --global user.email "user@example.com"
         </p>
 
-        <div className="section-header">Git Clone</div>
+        <div className={pageStyles.sectionHeader}>Git Clone</div>
         <p>Clone the remote repository with HTTPs or with SSH</p>
         <p className="highlight">git clone (repo url)</p>
-        <div className="section-header">Create remote repo</div>
+        <div className={pageStyles.sectionHeader}>Create remote repo</div>
         <p>
           First creae a new repo on Github. Then copy the link to the remote
           repo. Then initialize the repository in your project directory.
@@ -34,7 +34,7 @@ const Git = () => {
         <p className="highlight">git remote add origin (link to repo)</p>
         <p>Then do a pull to get the README.md file.</p>
         <p className="highlight">git pull origin master</p>
-        <div className="section-header">Git Branches</div>
+        <div className={pageStyles.sectionHeader}>Git Branches</div>
         <p>
           To create a branch off of the branch that you are currently on type:
         </p>
@@ -87,7 +87,7 @@ const Git = () => {
         <p className="highlight">git add (file1) (file2)</p>
         <p>Then you just do a commit as normal after that.</p>
 
-        <div className="section-header">Show history of commits</div>
+        <div className={pageStyles.sectionHeader}>Show history of commits</div>
         <p>
           To get information about the commits that you have done just type:
         </p>
@@ -104,7 +104,7 @@ const Git = () => {
         </p>
         <p className="highlight">git log --graph</p>
 
-        <div className="section-header">Git Reset</div>
+        <div className={pageStyles.sectionHeader}>Git Reset</div>
         <p>
           Git reset is used to unstage files or remove commits. It does so by
           changing what the tip of the branch (HEAD) points to.
@@ -126,7 +126,7 @@ const Git = () => {
         <p className="highlight">
           git reset --hard HEAD~2(destroys the last two commits, HEAD and HEAD^)
         </p>
-        <div className="section-header">Git Stash</div>
+        <div className={pageStyles.sectionHeader}>Git Stash</div>
         <p>
           Stashing allows you to save your curent unstages changes and bring
           your branch back to an unmodified state. When you stash, your changes
@@ -140,7 +140,7 @@ const Git = () => {
         <p className="highlight">
           git stash -m "message" (add a message to your stash)
         </p>
-        <div className="section-header">Saving Password Locally</div>
+        <div className={pageStyles.sectionHeader}>Saving Password Locally</div>
         <p>
           To not have to type in your appsword every time you do a push you can
           use the Credential helper to store your passowrd locally. Note: Your

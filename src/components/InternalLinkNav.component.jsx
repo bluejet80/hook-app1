@@ -2,7 +2,7 @@ const InternalLinkNav = (props) => {
   const links = props.links;
   return (
     <div className="internal-link-nav">
-      <ul className="main-links">
+      <ul className="internal-link-list">
         {links.map((item, index) => {
           return (
             <li className="no-list" key={index}>

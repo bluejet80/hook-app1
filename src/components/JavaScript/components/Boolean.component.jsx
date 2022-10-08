@@ -17,7 +17,7 @@ const Boolean = () => {
         <div className={pageStyles.sectionHeader}>
           Several Logical Operators are used
         </div>
-        <ul>
+        <ul className="square-list">
           <li>AND Operator &&</li>
           <li>OR Operator ||</li>
           <li>NOT Operator !</li>
@@ -36,7 +36,7 @@ const Boolean = () => {
           conditionals inside the template literal
         </p>
         <div className={pageStyles.sectionHeader}>5 Falsy Values</div>
-        <ul>
+        <ul className="square-list">
           <li>Zero</li>
           <li>Empty String</li>
           <li>undefined</li>

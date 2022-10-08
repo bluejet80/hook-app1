@@ -12,7 +12,7 @@ import {
 import { Route, Routes } from "react-router-dom";
 
 const names = ["jest", "tdd", "cypress", "jasmine", "reacttest", "puppeteer"];
-const colors = ["color11", "color8", "color3", "color16"];
+const colors = ["test-color1", "test-color2", "test-color3", "test-color4"];
 const elements = [
   <Jest />,
   <TDD />,

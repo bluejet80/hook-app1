@@ -25,7 +25,7 @@ const names = [
   "docs",
   "reactweb",
 ];
-const colors = ["color13", "color14", "color15", "color16"];
+const colors = ["react-color1", "react-color2", "react-color3", "react-color4"];
 const elements = [
   <Redux />,
   <ClassComp />,

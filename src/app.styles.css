@@ -44,60 +44,60 @@
 /* Javascript Page */
 
 .js-color1 {
-  background: var(--flat-green-sea);
+  background: var(--desat-blue);
 }
 .js-color2 {
-  background: var(--desat-sand);
+  background: var(--desat-lt-blue);
 }
 .js-color3 {
-  background: var(--desat-yellow);
+  background: var(--flat-concrete);
 }
 .js-color4 {
-  background: var(--win8-crimson);
+  background: var(--flat-sun-flower);
 }
 
 /* NodeJS Page */
 
 .node-color1 {
-  background: var(--color5);
+  background: var(--metro-yellow);
 }
 .node-color2 {
-  background: var(--color6);
+  background: var(--win8-orange);
 }
 .node-color3 {
-  background: var(--color7);
+  background: var(--metro-dark-red);
 }
 .node-color4 {
-  background: var(--color8);
+  background: var(--desat-indigo);
 }
 
 /* React Page */
 
 .react-color1 {
-  background: var(--color17);
+  background: var(--desat-cobalt);
 }
 .react-color2 {
-  background: var(--color18);
+  background: var(--desat-yellow);
 }
 .react-color3 {
-  background: var(--color19);
+  background: var(--metro-teal);
 }
 .react-color4 {
-  background: var(--color20);
+  background: var(--metro-magenta);
 }
 /* Testing Page */
 
-.testing-color1 {
-  background: var(--color21);
+.test-color1 {
+  background: var(--win8-cyan);
 }
-.testing-color2 {
-  background: var(--color22);
+.test-color2 {
+  background: var(--win8-green);
 }
-.testing-color3 {
-  background: var(--color23);
+.test-color3 {
+  background: var(--win8-olive);
 }
-.testing-color4 {
-  background: var(--color24);
+.test-color4 {
+  background: var(--desat-lt-blue);
 }
 
 /* More Colors */
@@ -224,7 +224,7 @@ h3 {
 }
 
 .highlight {
-  background: rgba(44, 234, 255, 0.25);
+  background: rgba(250, 240, 174, 0.4);
   padding: 3px;
 }
 
@@ -234,7 +234,17 @@ h3 {
   height: fit-content;
   border: 1px black solid;
 }
-.main-links li {
+.internal-link-list {
+  display: flex;
+  font-family: "lato";
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+.no-list {
+  list-style-type: none;
+  font-size: 15px;
   margin: 10px;
 }
 
@@ -248,11 +258,7 @@ h3 {
 
 .square-list {
   list-style-type: square;
-}
-
-.no-list {
-  list-style-type: none;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .home-content li {
@@ -275,6 +281,7 @@ h3 {
 .table-cell {
   padding: 10px;
   border: 3px solid rgb(132, 132, 132);
+  font-size: 20px;
 }
 
 /*code*/
