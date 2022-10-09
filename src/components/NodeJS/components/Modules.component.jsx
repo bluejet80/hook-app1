@@ -11,20 +11,21 @@ import {
   esModuleCode4,
 } from "../data/nodeCode";
 import { CodeJSBlock } from "../../index";
+import { pageStyles } from "../data/styles";
 
 const Modules = () => {
   return (
-    <div className="home-section color6">
-      <div className="header color5">
-        <span className="title">Node.js Module System</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Node.js Module System</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Importing/Exporting</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Importing/Exporting</div>
         <p>
           There are two different ways of importing modules in Node and
           JavaScript
         </p>
-        <ul>
+        <ul className="square-list">
           <li>CommonJS Modules</li>
           <li>ES Modules</li>
         </ul>

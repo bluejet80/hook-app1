@@ -6,15 +6,18 @@ import {
   mvcTable,
   fullStackTable,
 } from "../data/TableData";
+import { pageStyles } from "../data/styles";
 
 const Packages = () => {
   return (
-    <div className="home-section color6">
-      <div className="header color5">
-        <span className="title">Node.js Packages</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Node.js Packages</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Classes of Node.js Frameworks</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>
+          Classes of Node.js Frameworks
+        </div>
         <h3>MVC Frameworks</h3>
         <p>
           Model View Controller or MVC is architectural anatomy used as the
@@ -42,7 +45,7 @@ const Packages = () => {
         <p>Table of Full-Stack Frameworks</p>
         <DataTableLink list={fullStackTable} />
 
-        <div className="section-header">Table of Useful Packages</div>
+        <div className={pageStyles.sectionHeader}>Table of Useful Packages</div>
         <DataTableLink list={packageTable} />
 
         <Footer complete={false} />

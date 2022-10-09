@@ -1,6 +1,8 @@
 import { ObjectTable, CodeJSBlock, Footer } from "../../index";
 import { globalObject } from "../data/ObjectData";
 import { sysArgs, dirCode } from "../data/nodeCode";
+import { pageStyles } from "../data/styles";
+
 const code1 = `
   setTimeout(() => {
       console.log('hello');
@@ -10,11 +12,11 @@ const code1 = `
 
 const Global = () => {
   return (
-    <div className="home-section color6">
-      <div className="header color5">
-        <span className="title">Node.js Global Object</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Node.js Global Object</span>
       </div>
-      <div className="home-content">
+      <div className={pageStyles.homeContent}>
         <p>
           In Node, we have a <span className="code-span">global</span> object
           that we can always access. Features that we expect to be available
@@ -34,7 +36,7 @@ const Global = () => {
           as just <span className="code-span">console.log</span>.
         </p>
 
-        <div className="section-header">Getting Args from CLI</div>
+        <div className={pageStyles.sectionHeader}>Getting Args from CLI</div>
         <p>
           Here we will quickly go over getting arguments passed from the command
           line to your program.
@@ -46,12 +48,12 @@ const Global = () => {
           that were passed when your program was ran.
         </p>
 
-        <div className="section-header">Useful Functions</div>
+        <div className={pageStyles.sectionHeader}>Useful Functions</div>
         <h3>Show the current direcotry</h3>
         <CodeJSBlock code={dirCode} />
 
         <hr />
-        <div className="section-header">The Global Object</div>
+        <div className={pageStyles.sectionHeader}>The Global Object</div>
         <p>This is a table of the methods in the global object</p>
 
         <ObjectTable list={globalObject} />

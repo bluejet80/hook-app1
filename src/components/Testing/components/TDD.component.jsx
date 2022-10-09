@@ -1,13 +1,14 @@
 import { Footer } from "../../index";
+import { pageStyles } from "../data/styles";
 
 const TDD = () => {
   return (
-    <div className="home-section color13">
-      <div className="header color16">
-        <span className="title">Test Driven Design</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Test Driven Design</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">First thing</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>First thing</div>
         <p>stuff</p>
         <Footer complete={false} />
       </div>
