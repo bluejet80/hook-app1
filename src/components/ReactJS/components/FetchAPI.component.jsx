@@ -1,15 +1,16 @@
 import { Footer } from "../../index";
 import { fetchCodeCC } from "../data/reactCode";
 import { CodeJSBlock } from "../../index";
+import { pageStyles } from "../data/styles";
 
 const FetchAPI = () => {
   return (
-    <div className="home-section color16">
-      <div className="header color14">
-        <span className="title">Fetch API</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Fetch API</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">How fetch Works</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>How fetch Works</div>
         <p>
           Fetch is an API that is available in the browser to your JS Code and
           is used to get information and data from other websites.

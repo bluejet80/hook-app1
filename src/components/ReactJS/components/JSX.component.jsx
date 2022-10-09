@@ -1,13 +1,14 @@
 import { Footer } from "../../index";
+import { pageStyles } from "../data/styles";
 
 const JSX = () => {
   return (
-    <div className="home-section color16">
-      <div className="header color14">
-        <span className="title">JSX Studies</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>JSX Studies</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Random Thoughts</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Random Thoughts</div>
         <p>
           This is the reason why you put things into a index.js file. Its
           because then when you are in other componenets and you want to import

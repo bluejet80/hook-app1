@@ -4,15 +4,16 @@ import { reduxCode1 } from "../data/reactCode";
 import { UnorderedList1 } from "../../index";
 import { reduxList1, reduxList2 } from "../data/reduxList";
 import redux_img1 from "../../../images/redux_img1.png";
+import { pageStyles } from "../data/styles";
 
 const Redux = () => {
   return (
-    <div className="home-section color16">
-      <div className="header color14">
-        <span className="title">Redux Information</span>
+    <div className={pageStyles.homeSection}>
+      <div className={pageStyles.header}>
+        <span className={pageStyles.title}>Redux Information</span>
       </div>
-      <div className="home-content">
-        <div className="section-header">Overview</div>
+      <div className={pageStyles.homeContent}>
+        <div className={pageStyles.sectionHeader}>Overview</div>
         <p>
           Here is a link to the{" "}
           <a href="https://redux.js.org/tutorials/essentials/part-1-overview-concepts">
