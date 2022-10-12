@@ -6,6 +6,10 @@ import {
   emacsTable3,
   emacsTable4,
   emacstable5,
+  emacstable6,
+  emacstable7,
+  slimeTable1,
+  orgRoam1,
 } from "../data/tableData";
 import { emacsInit1 } from "../data/emacsInit";
 import { CodeCLBlock } from "../../CodeBlock.component";
@@ -27,10 +31,17 @@ const Emacs = () => {
         <DataTable list={emacsTable3} />
         <h3>Buffers and Windows</h3>
         <DataTable list={emacsTable4} />
+        <h3>More Buffers and Windows</h3>
+        <DataTable list={emacstable6} />
+        <DataTable list={emacstable7} />
         <h3>Helpful Information</h3>
         <DataTable list={emacstable5} />
 
+        <div className={pageStyles.sectionHeader}>Slime</div>
+        <DataTable list={slimeTable1} />
+
         <div className={pageStyles.sectionHeader}>Org-Roam</div>
+        <DataTable list={orgRoam1} />
 
         <div className={pageStyles.sectionHeader}>Package Management</div>
 

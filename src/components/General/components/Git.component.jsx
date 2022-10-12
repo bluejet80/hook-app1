@@ -146,11 +146,86 @@ const Git = () => {
           use the Credential helper to store your passowrd locally. Note: Your
           passowrd is stored unencrypted.
         </p>
-        <p className="highlight">git config credential.helper store</p>
+        <p className="highlight">
+          git config --global credential.helper 'store --file ~/.my-credentials'
+        </p>
         <p>
           Then once again enter your username and password and it will be saved
           from them on. If your remote token expires you will need to do this
           process over again.
+        </p>
+        <div className={pageStyles.sectionHeader}>Git Merge Conflicts</div>
+        <p>
+          With git merge conflicts it alters the file and adds annotations to
+          the file where the conflicts are specifically at. Then, using those
+          annotations you can figure out what you wish to keep in the file and
+          what needs to be deleted. Alter the file accordingly and then
+          re-commit your changes and then push to GitHub.
+        </p>
+        <p>
+          To prevent merge conflicts it is better to ;checkout a new branch
+          first if you know the files that you have are different from those up
+          on github. Then you can push that branch up to github and issue a pull
+          request once you fix the differences between the branches.
+        </p>
+        <p>It is much easier to undo a pull request, than to undo a commit.</p>
+        <div className={pageStyles.sectionHeader}>Undoing a Commit</div>
+        <p>
+          So when I messed everything up, on github I went to the commits and
+          then chose the commit that I wanted to return to. On that commit there
+          is a button that will copy the hash of that commit. So I copied it and
+          then ran this command on my machine.
+        </p>
+        <p className="highlight">git revert HASH</p>
+        <p>
+          Then it told me there were conflicts so i opened VSCode and inside the
+          file were annotations showing the conflicts and so I removed the
+          things I didnt want and then saved the file. Then commited those
+          changes and pushed it back to github.
+        </p>
+
+        <div className={pageStyles.sectionHeader}>Undoing a Commit</div>
+        <p className="highlight">git commit -a</p>
+        <p>
+          This command does a git add . and a git commit all in one command. It
+          then automatically brings up the commit template for you to add notes
+          to it as well.
+        </p>
+        <p className="highlight">git diff HEAD</p>
+        <p>
+          This command will show you the differences between your current file
+          and the one you are trying to merge. You can either run the command
+          without the HEAD or you can put a specific HASH in aswell.
+        </p>
+        <div className={pageStyles.sectionHeader}>Web Links</div>
+        <p>
+          <a
+            href="https://dzone.com/articles/7-tips-of-searching-github-repositories-you-should"
+            target="blank"
+          >
+            Searching Github Repositories
+          </a>
+        </p>
+        <p>
+          <a href="https://profy.dev/project/github-minesweeper" target="blank">
+            Learn Git and Github w help from a bot
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://dev.to/sourcegraph/sourcegraph-code-search-the-developers-treasure-trove-3ach"
+            target="blank"
+          >
+            Searching for code to refactor
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://dev.to/olanetsoft/10-github-repositories-you-should-know-as-a-developer-4l0p"
+            target="blank"
+          >
+            Git hub repositories for Developers
+          </a>
         </p>
 
         <Footer complete={true} />

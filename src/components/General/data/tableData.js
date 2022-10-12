@@ -5,88 +5,89 @@ export const sandrepVim = [
 
 export const emacsTable1 = [
   [
-    "a-u",
+    "A-u",
     "To make a word Capitalized, position th ecursor at the beginning of the word.",
   ],
-  ["a-q", "To turn a long line into a paragraph"],
-  ["a-w", "To copy/yank text"],
-  ["c-y", "To paste text"],
-  ["c-w", "To cut text"],
+  ["A-q", "To turn a long line into a paragraph"],
+  ["A-w", "To copy/yank text"],
+  ["C-y", "To paste text"],
+  ["C-w", "To cut text"],
 ];
 
 export const emacsTable2 = [
-  ["c-a", "Beginning of the line"],
-  ["c-e", "End of the line"],
-  ["c-p", "Up one line"],
-  ["c-n", "Down one line"],
-  ["a-e a-a", "Move up and down by paragraph"],
-  ["a-f a-b", "Forward and Back by words"],
-  ["c-l", "Center cursor on page"],
+  ["C-a", "Beginning of the line"],
+  ["C-e", "End of the line"],
+  ["C-p", "Up one line"],
+  ["C-n", "Down one line"],
+  ["A-e A-a", "Move up and down by paragraph"],
+  ["A-f A-b", "Forward and Back by words"],
+  ["C-l", "Center cursor on page"],
 ];
 
 export const emacsTable3 = [
-  ["c-x c-+", "To make text bigger"],
-  ["c-x c--", "To make text smaller"],
+  ["C-x C-+", "To make text bigger"],
+  ["C-x C--", "To make text smaller"],
 ];
 
 export const emacsTable4 = [
-  ["c-x o", "Switch between buffer windows"],
-  ["c-x 1", "Close all other windows except the one you are on"],
-  ["c-x 0", "Close the buffer that you are on"],
-  ["c-x 2", "Split the window horizontally"],
-  ["c-x 3", "Split the window vertically"],
-  ["c-c w", "Save as a new file"],
-  ["c-c left", "Winner-mode to undo a change in the buffer"],
-  ["c-x h", "Select all the text in the buffer"],
-  ["a-x", "To run commands"],
-  ["c-s", "To search buffer"],
-  ["c-r", "Reverse Search"],
+  ["C-x o", "Switch between buffer windows"],
+  ["C-x 1", "Close all other windows except the one you are on"],
+  ["C-x 0", "Close the buffer that you are on"],
+  ["C-x 2", "Split the window horizontally"],
+  ["C-x 3", "Split the window vertically"],
+  ["C-c w", "Save as a new file"],
+  ["C-c left", "Winner-mode to undo a change in the buffer"],
+  ["C-x h", "Select all the text in the buffer"],
+  ["A-x", "To run commands"],
+  ["C-s", "To search buffer"],
+  ["C-r", "Reverse Search"],
 ];
 
 export const emacstable5 = [
-  ["c-h f", "Look for help on a function"],
-  ["c-h m", "Show available commands for current mode"],
-  ["c-h v", "Help related to variables"],
-  ["c-h k", "To find which function is bound to a key"],
-  ["c-h w", "To see which key bindings are defined for a given function"],
-  ["c-h ?", "To see whether other options are available"],
-  ["a-x describe-function", "Get info on function"],
+  ["C-h f", "Look for help on a function"],
+  ["C-h m", "Show available commands for current mode"],
+  ["C-h v", "Help related to variables"],
+  ["C-h k", "To find which function is bound to a key"],
+  ["C-h w", "To see which key bindings are defined for a given function"],
+  ["C-h ?", "To see whether other options are available"],
+  ["A-x describe-function", "Get info on function"],
 ];
 
 export const emacsPack1 = [
   ["package-refresh-contents", "Refresh Package List"],
   ["try [return] <package name>", "try a package out"],
   ["describe-package [return] <package name>", "Get info on a package"],
-  ["a-x <type package name>", "Do this to find commands related to package"],
+  ["A-x <type package name>", "Do this to find commands related to package"],
 ];
 
 export const orgRoam1 = [
-  ["c-c n f", "creates a new node, or finds already made node"],
-  ["c-c n i", "links nodes to nodes within the node"],
-  ["c-c c-c", "save the node after you create it the first time"],
-  ["c-c n l", "brings up org-roam-buffer"],
-  ["c-c c-l", "add a link"],
+  ["C-c n f", "creates a new node, or finds already made node"],
+  ["C-c n i", "links nodes to nodes within the node"],
+  ["C-c C-c", "save the node after you create it the first time"],
+  ["C-c n l", "brings up org-roam-buffer"],
+  ["C-c C-l", "add a link"],
   ["org-roam-db-build-cache", "Reload the database"],
   ["org-roam-update-org-id-locations", "update the database"],
   ["crux-delete-org-id-locations", "delets a node, access it with a-x"],
+  ["C-c &", "Go back from clicking a link"],
 ];
 
-export const emacsTable6 = [
-  ["c-x b", "show open buffers"],
-  ["c-x k", "kill buffer"],
-  ["c-x c-f", "emacs find"],
-  ["c-x c-s", "writes current buffer"],
+export const emacstable6 = [
+  ["C-x b", "show open buffers"],
+  ["C-x k", "kill buffer"],
+  ["C-x C-f", "emacs find"],
+  ["C-x C-s", "writes current buffer"],
 ];
 
 export const slimeTable1 = [
-  ["a-x slime", "To start Slime"],
+  ["A-x slime", "To start Slime"],
   ["sayoonara", "To exit the Slime env type comma, then enter the word "],
-  ["c-Return", "close any unmatched parenthesis"],
-  ["c-j", "begin new line and indent"],
-  ["c-c c-b", "Interrupt lisp process"],
-  ["c-c a-o", "clear entire buffer"],
-  ["c-c c-c", "recompile at point"],
-  ["c-c c-k", "recompile whole buffer"],
+  ["C-Return", "close any unmatched parenthesis and execute"],
+  ["C-j", "begin new line and indent"],
+  ["C-c C-b", "Interrupt lisp process"],
+  ["C-c A-o", "clear entire buffer"],
+  ["C-c C-c", "recompile at point"],
+  ["C-c C-k", "recompile whole buffer"],
 ];
 
 export const regexTable1 = [
@@ -154,4 +155,13 @@ export const regexTable2 = [
   ["^", "This matches the beginning of a line"],
   ["&", "matched pattern to be used in substitution."],
   [".", "matches a single character"],
+];
+
+export const emacstable7 = [
+  ["C-x C-s", "Saves current Buffer"],
+  ["C-x C-f", "Visit new file"],
+  ["C-x C-w", "Save As"],
+  ["C-x right", "Next Buffer"],
+  ["C-x left", "Previous Buffer"],
+  ["C-x C-b", "List all Buffers"],
 ];
