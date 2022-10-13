@@ -14,6 +14,7 @@ import {
   TopHead,
   Home,
   Testing,
+  Links,
 } from "./components";
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="css/*" element={<CSS />} />
           <Route path="general/*" element={<General />} />
           <Route path="testing/*" element={<Testing />} />
+          <Route path="links/*" element={<Links />} />
         </Routes>
       </div>
     </Router>

@@ -26,6 +26,9 @@ const TopHead = () => {
         <NavLink to="testing">
           <li>Testing</li>
         </NavLink>
+        <NavLink to="links">
+          <li>Links</li>
+        </NavLink>
       </ul>
     </div>
   );

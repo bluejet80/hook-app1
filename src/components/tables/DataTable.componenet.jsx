@@ -45,3 +45,22 @@ export const DataTableLink = (list) => {
     </table>
   );
 };
+
+export const DataTableLink2 = (list) => {
+  return (
+    <table className="table-main">
+      {list.list.map((item, index) => {
+        return (
+          <tr>
+            <td className="table-cell">{item[1]}</td>
+            <td className="table-cell">
+              <a href={item[0]} target="blank">
+                Link
+              </a>
+            </td>
+          </tr>
+        );
+      })}
+    </table>
+  );
+};
